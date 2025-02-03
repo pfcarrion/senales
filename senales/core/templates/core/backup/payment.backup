@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pago</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .payment-container {
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .payment-container h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .payment-container p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .payment-container .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .payment-container .button:hover {
+            background-color: #0056b3;
+        }
+		
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+    <!-- Cargar el SDK de PayPal -->
+    <script src="https://www.paypal.com/sdk/js?client-id="AdCUyp80yRSy7XYsBXAGMx2WqANjIf6Ksnaux6ORAGEd7S_3de1c_rlqH1E3N_2GZSer9U_kH4fC6px7"&currency=USD"></script>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Confirmar Pago</h1>
+        <p><strong>Plan:</strong> {{ subscription.plan.nombre }}</p>
+        <p><strong>Monto:</strong> ${{ monto }}</p>
+
+        <!-- Contenedor para el botón de PayPal -->
+        <div id="paypal-button-container"></div>
+
+        <div class="footer">
+            <p>Gracias por confiar en nosotros. Tu seguridad es nuestra prioridad.</p>
+        </div>
+    </div>
+
+    <script>
+        // Inicializar PayPal con el monto de la suscripción
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: "{{ monto }}" // Monto dinámico pasado desde el backend
+                        },
+                        description: "Suscripción al plan {{ subscription.plan.nombre }}"
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    // Mostrar un mensaje de éxito al usuario
+                    alert("¡Pago completado con éxito! Gracias, " + details.payer.name.given_name + ".");
+
+                    // Redirigir al backend para procesar el pago y asociar la suscripción
+                    window.location.href = "{% url 'crear_usuario' %}";
+                });
+            },
+            onCancel: function(data) {
+                alert("El pago fue cancelado. Por favor, inténtalo de nuevo.");
+            },
+            onError: function(err) {
+                console.error("Error durante el pago:", err);
+                alert("Ocurrió un error durante el pago. Por favor, inténtalo nuevamente.");
+            }
+        }).render("#paypal-button-container");
+    </script>
+</body>
+</html>
+

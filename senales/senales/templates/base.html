@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Plataforma de señales de trading para operar con confianza y éxito.">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
+
+    <title>{% block title %} {% trans "Señales Trading" %} {% endblock %}</title>
+
+    <!-- Cargar jQuery primero -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlazar el archivo CSS global -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- Font Awesome para agregar íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <!-- Encabezado común -->
+    <header>
+        {% block navbar %}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main navigation">
+            <div class="container">
+
+		<a href="/" class="nav-item {% if request.path == '/' %}active{% endif %}"><i class="fas fa-chart-line"></i>Señales Trading</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/quienes-somos">Quiénes Somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'subscribe' %}">Inscripción y Pagos</a></li>
+			                  <li class="nav-item"><a class="nav-link" href="{% url 'senales' %}">Señales de Trading</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        {% endblock %}
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        {% block content %}{% endblock %}
+    <!-- Contenedor para los datos cifrados -->
+	    <section class="secure-data-section text-center mt-4">
+        	<h4>Datos Cifrados</h4>
+	        <div id="secure-data-container" class="p-3 border rounded bg-light">
+            	<!-- Aquí se mostrará el texto cifrado -->
+        	</div>
+	    </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; {{ year }} Señales Trading. Todos los derechos reservados.</p>
+            <p>
+                <a href="#!" id="openTerms" class="text-white">Términos y Condiciones</a> |
+                <a href="#!" id="openPrivacy" class="text-white">Política de Privacidad</a> |
+                <a href="mailto:contacto@senalestrading.org" class="text-white">Contáctanos</a>
+            </p>
+            <div class="social-links mt-2">
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="text-white me-3">Facebook</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" class="text-white">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales -->
+
+    <!-- Modal para Términos y Condiciones -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span id="closeTermsModal" class="close">&times;</span>
+            <h2>Términos y Condiciones</h2>
+            <div class="terms-text" id="termsContent">
+                <!-- El contenido se cargará aquí con AJAX -->
+            </div>
+            <div id="termsAgreeSection">
+                <label>
+                    <input type="checkbox" id="termsAgreeCheckbox"> Acepto los términos y condiciones.
+                </label>
+                <button id="termsContinueButton" disabled>Continuar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Política de Privacidad -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <span id="closePrivacyModal" class="close">&times;</span>
+            <h2>Política de Privacidad</h2>
+            <div class="terms-text" id="privacyContent">
+                <!-- El contenido se cargará aquí con AJAX -->
+            </div>
+            <div id="privacyAgreeSection">
+                <label>
+                    <input type="checkbox" id="privacyAgreeCheckbox"> Acepto la política de privacidad.
+                </label>
+                <button id="privacyContinueButton" disabled>Continuar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+    <script src="{% static 'js/custom.js' %}" defer></script>
+
+    {% block scripts %}{% endblock %}
+</body>
+
+</html>

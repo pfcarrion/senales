@@ -1,0 +1,886 @@
+.
+├── blog
+│   ├── admin.py
+│   ├── apps.py
+│   ├── cms_apps.py
+│   ├── cms_plugins.py
+│   ├── forms.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0002_blogpost_rename_fecha_comentario_fecha_creacion_and_more.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       ├── 0001_initial.cpython-312.pyc
+│   │       ├── 0002_blogpost_rename_fecha_comentario_fecha_creacion_and_more.cpython-312.pyc
+│   │       └── __init__.cpython-312.pyc
+│   ├── models.py
+│   ├── __pycache__
+│   │   ├── admin.cpython-312.pyc
+│   │   ├── apps.cpython-312.pyc
+│   │   ├── cms_apps.cpython-312.pyc
+│   │   ├── cms_plugins.cpython-312.pyc
+│   │   ├── forms.cpython-312.pyc
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── models.cpython-312.pyc
+│   │   ├── urls.cpython-312.pyc
+│   │   └── views.cpython-312.pyc
+│   ├── static
+│   │   └── blog
+│   │       └── style.css
+│   ├── templates
+│   │   ├── blogs
+│   │   │   ├── detalle_blog.html
+│   │   │   └── lista_blog.html
+│   │   └── cms_plugins
+│   │       └── blog_plugin.html
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── core
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   ├── models.py
+│   ├── __pycache__
+│   ├── tests.py
+│   └── views.py
+├── db.sqlite3
+├── estructura.txt
+├── LICENSE
+├── locale
+│   ├── en
+│   │   └── LC_MESSAGES
+│   │       ├── django.mo
+│   │       └── django.po
+│   └── es
+│       └── LC_MESSAGES
+│           ├── django.mo
+│           └── django.po
+├── manage.py
+├── payments
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   ├── models.py
+│   ├── __pycache__
+│   ├── tests.py
+│   └── views.py
+├── __pycache__
+├── README.md
+├── requirements.in
+├── requirements.txt
+├── senales
+│   ├── asgi.py
+│   ├── __init__.py
+│   ├── locale
+│   │   ├── en
+│   │   │   └── LC_MESSAGES
+│   │   │       ├── django.mo
+│   │   │       └── django.po
+│   │   └── es
+│   │       └── LC_MESSAGES
+│   │           ├── django.mo
+│   │           └── django.po
+│   ├── __pycache__
+│   │   ├── __init__.cpython-312.pyc
+│   │   ├── settings.cpython-312.pyc
+│   │   ├── urls.cpython-312.pyc
+│   │   └── wsgi.cpython-312.pyc
+│   ├── settings.py
+│   ├── static
+│   │   ├── css
+│   │   │   ├── backup
+│   │   │   │   └── styles.backup
+│   │   │   └── styles.css
+│   │   ├── html
+│   │   │   ├── politicaprivacidad.html
+│   │   │   └── terminocondicion.html
+│   │   ├── img
+│   │   │   ├── trading1.jpg
+│   │   │   ├── trading2.jpg
+│   │   │   └── trading3.jpg
+│   │   ├── js
+│   │   │   └── scripts.js
+│   │   └── static-files-go-here
+│   ├── templates
+│   │   ├── backup
+│   │   │   ├── base1.html
+│   │   │   ├── base2.backup
+│   │   │   ├── base3.backup
+│   │   │   ├── base.backup
+│   │   │   ├── inicio2.backup
+│   │   │   └── inicio.backup
+│   │   ├── base.html
+│   │   ├── inicio.html
+│   │   └── quienesomos.html
+│   ├── urls.py
+│   └── wsgi.py
+├── signals
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   ├── models.py
+│   ├── __pycache__
+│   ├── tests.py
+│   └── views.py
+├── staticfiles
+│   ├── admin
+│   │   ├── css
+│   │   │   ├── autocomplete.css
+│   │   │   ├── base.css
+│   │   │   ├── changelists.css
+│   │   │   ├── dark_mode.css
+│   │   │   ├── dashboard.css
+│   │   │   ├── forms.css
+│   │   │   ├── login.css
+│   │   │   ├── nav_sidebar.css
+│   │   │   ├── responsive.css
+│   │   │   ├── responsive_rtl.css
+│   │   │   ├── rtl.css
+│   │   │   ├── vendor
+│   │   │   │   └── select2
+│   │   │   └── widgets.css
+│   │   ├── img
+│   │   │   ├── calendar-icons.svg
+│   │   │   ├── gis
+│   │   │   │   ├── move_vertex_off.svg
+│   │   │   │   └── move_vertex_on.svg
+│   │   │   ├── icon_addlink.gif
+│   │   │   ├── icon_addlink_large.gif
+│   │   │   ├── icon-addlink.svg
+│   │   │   ├── icon-alert.svg
+│   │   │   ├── icon_calendar.gif
+│   │   │   ├── icon-calendar.svg
+│   │   │   ├── icon_changelink.gif
+│   │   │   ├── icon-changelink.svg
+│   │   │   ├── icon_clock.gif
+│   │   │   ├── icon-clock.svg
+│   │   │   ├── icon_deletelink.gif
+│   │   │   ├── icon-deletelink.svg
+│   │   │   ├── icon-hidelink.svg
+│   │   │   ├── icon-no.gif
+│   │   │   ├── icon-no.svg
+│   │   │   ├── icon_searchbox.png
+│   │   │   ├── icon-unknown-alt.svg
+│   │   │   ├── icon-unknown.gif
+│   │   │   ├── icon-unknown.svg
+│   │   │   ├── icon-viewlink.svg
+│   │   │   ├── icon-yes.gif
+│   │   │   ├── icon-yes.svg
+│   │   │   ├── inline-delete.svg
+│   │   │   ├── LICENSE
+│   │   │   ├── README.txt
+│   │   │   ├── search.svg
+│   │   │   ├── selector-icons.gif
+│   │   │   ├── selector-icons.svg
+│   │   │   ├── selector-search.gif
+│   │   │   ├── sorting-icons.svg
+│   │   │   ├── tooltag-add.svg
+│   │   │   └── tooltag-arrowright.svg
+│   │   └── js
+│   │       ├── actions.js
+│   │       ├── admin
+│   │       │   ├── DateTimeShortcuts.js
+│   │       │   └── RelatedObjectLookups.js
+│   │       ├── autocomplete.js
+│   │       ├── calendar.js
+│   │       ├── cancel.js
+│   │       ├── change_form.js
+│   │       ├── collapse.js
+│   │       ├── core.js
+│   │       ├── filters.js
+│   │       ├── inlines.js
+│   │       ├── jquery.init.js
+│   │       ├── nav_sidebar.js
+│   │       ├── popup_response.js
+│   │       ├── prepopulate_init.js
+│   │       ├── prepopulate.js
+│   │       ├── SelectBox.js
+│   │       ├── SelectFilter2.js
+│   │       ├── theme.js
+│   │       ├── urlify.js
+│   │       └── vendor
+│   │           ├── jquery
+│   │           ├── select2
+│   │           └── xregexp
+│   ├── cms
+│   │   ├── css
+│   │   │   └── 4.1.4
+│   │   │       ├── cms.admin.css
+│   │   │       ├── cms.base.css
+│   │   │       ├── cms.pagetree.css
+│   │   │       ├── cms.welcome.css
+│   │   │       └── cms.wizard.css
+│   │   ├── fonts
+│   │   │   ├── 4.1.4
+│   │   │   │   ├── django-cms-iconfont.eot
+│   │   │   │   ├── django-cms-iconfont.svg
+│   │   │   │   ├── django-cms-iconfont.ttf
+│   │   │   │   ├── django-cms-iconfont.woff
+│   │   │   │   └── django-cms-iconfont.woff2
+│   │   │   └── src
+│   │   │       ├── advanced-settings.svg
+│   │   │       ├── alias.svg
+│   │   │       ├── apphook.svg
+│   │   │       ├── archive.svg
+│   │   │       ├── arrow-right.svg
+│   │   │       ├── arrow.svg
+│   │   │       ├── arrow-wide.svg
+│   │   │       ├── bin.svg
+│   │   │       ├── broadcast-off.svg
+│   │   │       ├── broadcast-on.svg
+│   │   │       ├── check-circle.svg
+│   │   │       ├── check-o.svg
+│   │   │       ├── check-square.svg
+│   │   │       ├── check.svg
+│   │   │       ├── close.svg
+│   │   │       ├── cogs.svg
+│   │   │       ├── comment.svg
+│   │   │       ├── compare.svg
+│   │   │       ├── copy.svg
+│   │   │       ├── cut.svg
+│   │   │       ├── edit-new.svg
+│   │   │       ├── edit.svg
+│   │   │       ├── eye.svg
+│   │   │       ├── forbidden.svg
+│   │   │       ├── handler.svg
+│   │   │       ├── highlight.svg
+│   │   │       ├── home.svg
+│   │   │       ├── info.svg
+│   │   │       ├── layers.svg
+│   │   │       ├── list-ol.svg
+│   │   │       ├── loader.svg
+│   │   │       ├── lock.svg
+│   │   │       ├── logo.svg
+│   │   │       ├── manage-versions.svg
+│   │   │       ├── menu.svg
+│   │   │       ├── minimize.svg
+│   │   │       ├── minus-circle.svg
+│   │   │       ├── minus-square-o.svg
+│   │   │       ├── minus-square.svg
+│   │   │       ├── minus.svg
+│   │   │       ├── moderate.svg
+│   │   │       ├── paste.svg
+│   │   │       ├── pencil.svg
+│   │   │       ├── pin.svg
+│   │   │       ├── plugins.svg
+│   │   │       ├── plus-circle.svg
+│   │   │       ├── plus-square-o.svg
+│   │   │       ├── plus.svg
+│   │   │       ├── publish.svg
+│   │   │       ├── puzzle.svg
+│   │   │       ├── redo.svg
+│   │   │       ├── rename.svg
+│   │   │       ├── scissors.svg
+│   │   │       ├── search.svg
+│   │   │       ├── settings.svg
+│   │   │       ├── sitemap.svg
+│   │   │       ├── squares.svg
+│   │   │       ├── _template.svgz
+│   │   │       ├── theme-auto.svg
+│   │   │       ├── theme-dark.svg
+│   │   │       ├── theme-light.svg
+│   │   │       ├── undo.svg
+│   │   │       ├── unlock.svg
+│   │   │       ├── unpublish.svg
+│   │   │       ├── view.svg
+│   │   │       └── window.svg
+│   │   ├── images
+│   │   │   └── sitemap-li-bg.jpg
+│   │   ├── img
+│   │   │   ├── favicon.png
+│   │   │   ├── icons
+│   │   │   │   ├── filetypes
+│   │   │   │   └── plugins
+│   │   │   ├── loader@2x.gif
+│   │   │   ├── loader.gif
+│   │   │   ├── pagetree
+│   │   │   │   └── tree-li-drag.gif
+│   │   │   └── toolbar
+│   │   │       ├── render_model_add.png
+│   │   │       ├── render_model_icon.png
+│   │   │       └── render_model_placeholder.png
+│   │   ├── js
+│   │   │   ├── admin
+│   │   │   │   ├── actions.js
+│   │   │   │   └── language-selector.js
+│   │   │   ├── admin.base.js
+│   │   │   ├── admin.changeform.js
+│   │   │   ├── admin.pagetree.js
+│   │   │   ├── dist
+│   │   │   │   └── 4.1.4
+│   │   │   ├── libs
+│   │   │   │   ├── class.min.js
+│   │   │   │   ├── jquery.min.js
+│   │   │   │   ├── jstree
+│   │   │   │   └── pep.js
+│   │   │   ├── modules
+│   │   │   │   ├── cms.base.js
+│   │   │   │   ├── cms.changeform.js
+│   │   │   │   ├── cms.changetracker.js
+│   │   │   │   ├── cms.clipboard.js
+│   │   │   │   ├── cms.messages.js
+│   │   │   │   ├── cms.modal.js
+│   │   │   │   ├── cms.navigation.js
+│   │   │   │   ├── cms.pagetree.dropdown.js
+│   │   │   │   ├── cms.pagetree.js
+│   │   │   │   ├── cms.pagetree.stickyheader.js
+│   │   │   │   ├── cms.plugins.js
+│   │   │   │   ├── cms.sideframe.js
+│   │   │   │   ├── cms.structureboard.js
+│   │   │   │   ├── cms.toolbar.js
+│   │   │   │   ├── cms.tooltip.js
+│   │   │   │   ├── cms.wizards.js
+│   │   │   │   ├── dropdown.js
+│   │   │   │   ├── get-dist-path.js
+│   │   │   │   ├── jquery.noconflict.post.js
+│   │   │   │   ├── jquery.noconflict.pre.js
+│   │   │   │   ├── jquery.transition.js
+│   │   │   │   ├── jquery.trap.js
+│   │   │   │   ├── jquery.ui.custom.js
+│   │   │   │   ├── jquery.ui.nestedsortable.js
+│   │   │   │   ├── jquery.ui.touchpunch.js
+│   │   │   │   ├── keyboard.js
+│   │   │   │   ├── loader.js
+│   │   │   │   ├── nextuntil.js
+│   │   │   │   ├── preload-images.js
+│   │   │   │   ├── scrollbar.js
+│   │   │   │   ├── shortcuts
+│   │   │   │   ├── slug.js
+│   │   │   │   └── tmpl.js
+│   │   │   ├── polyfills
+│   │   │   │   ├── array.prototype.findindex.js
+│   │   │   │   ├── domparser.js
+│   │   │   │   └── function.prototype.bind.js
+│   │   │   ├── select2
+│   │   │   │   ├── LICENSE
+│   │   │   │   ├── README.md
+│   │   │   │   ├── select2-bootstrap.css
+│   │   │   │   ├── select2.css
+│   │   │   │   ├── select2.js
+│   │   │   │   ├── select2_locale_ar.js
+│   │   │   │   ├── select2_locale_az.js
+│   │   │   │   ├── select2_locale_bg.js
+│   │   │   │   ├── select2_locale_ca.js
+│   │   │   │   ├── select2_locale_cs.js
+│   │   │   │   ├── select2_locale_da.js
+│   │   │   │   ├── select2_locale_de.js
+│   │   │   │   ├── select2_locale_el.js
+│   │   │   │   ├── select2_locale_en.js.template
+│   │   │   │   ├── select2_locale_es.js
+│   │   │   │   ├── select2_locale_et.js
+│   │   │   │   ├── select2_locale_eu.js
+│   │   │   │   ├── select2_locale_fa.js
+│   │   │   │   ├── select2_locale_fi.js
+│   │   │   │   ├── select2_locale_fr.js
+│   │   │   │   ├── select2_locale_gl.js
+│   │   │   │   ├── select2_locale_he.js
+│   │   │   │   ├── select2_locale_hr.js
+│   │   │   │   ├── select2_locale_hu.js
+│   │   │   │   ├── select2_locale_id.js
+│   │   │   │   ├── select2_locale_is.js
+│   │   │   │   ├── select2_locale_it.js
+│   │   │   │   ├── select2_locale_ja.js
+│   │   │   │   ├── select2_locale_ka.js
+│   │   │   │   ├── select2_locale_ko.js
+│   │   │   │   ├── select2_locale_lt.js
+│   │   │   │   ├── select2_locale_lv.js
+│   │   │   │   ├── select2_locale_mk.js
+│   │   │   │   ├── select2_locale_ms.js
+│   │   │   │   ├── select2_locale_nl.js
+│   │   │   │   ├── select2_locale_no.js
+│   │   │   │   ├── select2_locale_pl.js
+│   │   │   │   ├── select2_locale_pt-BR.js
+│   │   │   │   ├── select2_locale_pt-PT.js
+│   │   │   │   ├── select2_locale_ro.js
+│   │   │   │   ├── select2_locale_rs.js
+│   │   │   │   ├── select2_locale_ru.js
+│   │   │   │   ├── select2_locale_sk.js
+│   │   │   │   ├── select2_locale_sv.js
+│   │   │   │   ├── select2_locale_th.js
+│   │   │   │   ├── select2_locale_tr.js
+│   │   │   │   ├── select2_locale_ug-CN.js
+│   │   │   │   ├── select2_locale_uk.js
+│   │   │   │   ├── select2_locale_vi.js
+│   │   │   │   ├── select2_locale_zh-CN.js
+│   │   │   │   ├── select2_locale_zh-TW.js
+│   │   │   │   ├── select2.png
+│   │   │   │   ├── select2-spinner.gif
+│   │   │   │   └── select2x2.png
+│   │   │   ├── toolbar.js
+│   │   │   └── widgets
+│   │   │       ├── forms.apphookselect.js
+│   │   │       ├── forms.pageselectwidget.js
+│   │   │       ├── forms.pagesmartlinkwidget.js
+│   │   │       ├── forms.slugwidget.js
+│   │   │       └── wizard.pagetypeselect.js
+│   │   └── sass
+│   │       ├── cms.admin.scss
+│   │       ├── cms.base.scss
+│   │       ├── cms.pagetree.scss
+│   │       ├── cms.welcome.scss
+│   │       ├── cms.wizard.scss
+│   │       ├── components
+│   │       │   ├── _animation.scss
+│   │       │   ├── _button.scss
+│   │       │   ├── _clipboard.scss
+│   │       │   ├── _content.scss
+│   │       │   ├── _dark-mode-toggle.scss
+│   │       │   ├── _dialog.scss
+│   │       │   ├── _dropdown.scss
+│   │       │   ├── _general.scss
+│   │       │   ├── _hovertooltip.scss
+│   │       │   ├── _iconography.scss
+│   │       │   ├── _loader.scss
+│   │       │   ├── _modal.scss
+│   │       │   ├── pagetree
+│   │       │   ├── _pluginpicker.scss
+│   │       │   ├── _reset.scss
+│   │       │   ├── _shortcuts.scss
+│   │       │   ├── _sideframe.scss
+│   │       │   ├── _structureboard.scss
+│   │       │   ├── _subnav.scss
+│   │       │   ├── _toolbar.scss
+│   │       │   ├── _tooltip.scss
+│   │       │   └── _welcome.scss
+│   │       ├── libs
+│   │       │   ├── _iconfont.scss
+│   │       │   └── _rtl_patch.scss
+│   │       ├── mixins
+│   │       │   ├── _all.scss
+│   │       │   ├── _buttons.scss
+│   │       │   ├── _custom.scss
+│   │       │   ├── _retina.scss
+│   │       │   └── _zindex.scss
+│   │       └── settings
+│   │           ├── _all.scss
+│   │           ├── _cms.scss
+│   │           └── _pagetree.scss
+│   ├── css
+│   │   ├── backup
+│   │   │   └── styles.backup
+│   │   └── styles.css
+│   ├── djangocms_admin_style
+│   │   ├── css
+│   │   │   └── djangocms-admin.css
+│   │   ├── fonts
+│   │   │   ├── django-admin-iconfont.eot
+│   │   │   ├── django-admin-iconfont.svg
+│   │   │   ├── django-admin-iconfont.ttf
+│   │   │   ├── django-admin-iconfont.woff
+│   │   │   ├── django-admin-iconfont.woff2
+│   │   │   ├── django-admin-icons.eot
+│   │   │   ├── django-admin-icons.svg
+│   │   │   ├── django-admin-icons.ttf
+│   │   │   ├── django-admin-icons.woff
+│   │   │   └── src
+│   │   │       ├── archive.svg
+│   │   │       ├── arrow-left.svg
+│   │   │       ├── arrow-right.svg
+│   │   │       ├── calendar.svg
+│   │   │       ├── camera.svg
+│   │   │       ├── certificate.svg
+│   │   │       ├── check-circle.svg
+│   │   │       ├── check.svg
+│   │   │       ├── chevron-circle-down.svg
+│   │   │       ├── chevron-circle-left.svg
+│   │   │       ├── chevron-circle-right.svg
+│   │   │       ├── chevron-circle-up.svg
+│   │   │       ├── chevron-left.svg
+│   │   │       ├── clipboard.svg
+│   │   │       ├── clock.svg
+│   │   │       ├── cloud-download.svg
+│   │   │       ├── cloud.svg
+│   │   │       ├── cloud-upload.svg
+│   │   │       ├── cog.svg
+│   │   │       ├── comment.svg
+│   │   │       ├── credit-card.svg
+│   │   │       ├── cube.svg
+│   │   │       ├── desktop.svg
+│   │   │       ├── envelope-square.svg
+│   │   │       ├── envelope.svg
+│   │   │       ├── exclamation-triangle.svg
+│   │   │       ├── eye.svg
+│   │   │       ├── files-o.svg
+│   │   │       ├── file.svg
+│   │   │       ├── file-text.svg
+│   │   │       ├── film.svg
+│   │   │       ├── flag.svg
+│   │   │       ├── floppy-o.svg
+│   │   │       ├── folder-open.svg
+│   │   │       ├── folder.svg
+│   │   │       ├── gamepad.svg
+│   │   │       ├── gift.svg
+│   │   │       ├── heart.svg
+│   │   │       ├── home.svg
+│   │   │       ├── info-circle.svg
+│   │   │       ├── key.svg
+│   │   │       ├── laptop.svg
+│   │   │       ├── life-ring.svg
+│   │   │       ├── lightbulb-o.svg
+│   │   │       ├── lock.svg
+│   │   │       ├── logo.svg
+│   │   │       ├── map-marker.svg
+│   │   │       ├── minus-circle.svg
+│   │   │       ├── mobile.svg
+│   │   │       ├── money.svg
+│   │   │       ├── music.svg
+│   │   │       ├── newspaper-o.svg
+│   │   │       ├── pencil.svg
+│   │   │       ├── picture-o.svg
+│   │   │       ├── picture.svg
+│   │   │       ├── plus-circle.svg
+│   │   │       ├── plus.svg
+│   │   │       ├── print.svg
+│   │   │       ├── refresh.svg
+│   │   │       ├── remove.svg
+│   │   │       ├── reply.svg
+│   │   │       ├── scissors.svg
+│   │   │       ├── search-plus.svg
+│   │   │       ├── search.svg
+│   │   │       ├── shopping-cart.svg
+│   │   │       ├── suitcase.svg
+│   │   │       ├── tag.svg
+│   │   │       ├── ticket.svg
+│   │   │       ├── trash-o.svg
+│   │   │       ├── trash.svg
+│   │   │       ├── unlock-alt.svg
+│   │   │       ├── upload.svg
+│   │   │       ├── user.svg
+│   │   │       ├── volume-up.svg
+│   │   │       └── wrench.svg
+│   │   ├── img
+│   │   │   ├── bg-pattern.jpg
+│   │   │   ├── bg-pattern-light.jpg
+│   │   │   ├── django-cms-logo.png
+│   │   │   ├── drag-light.png
+│   │   │   ├── drag-norepeat.png
+│   │   │   ├── drag.png
+│   │   │   ├── icon_addlink@2x.gif
+│   │   │   ├── icon_addlink_large@2x.gif
+│   │   │   ├── icon_addlink_large.gif
+│   │   │   ├── icon_arrow_down.png
+│   │   │   ├── icon_arrow_right.png
+│   │   │   ├── icon_calendar@2x.gif
+│   │   │   ├── icon_changelink@2x.gif
+│   │   │   ├── icon_changelink_white@2x.png
+│   │   │   ├── icon_changelink_white.png
+│   │   │   ├── icon_clock@2x.gif
+│   │   │   ├── icon_deletelink@2x.png
+│   │   │   ├── icon_deletelink.png
+│   │   │   ├── icon_searchbox@2x.png
+│   │   │   ├── icon_search_white@2x.png
+│   │   │   ├── icon_softroot@2x.png
+│   │   │   ├── icon_softroot.png
+│   │   │   ├── pluginlist-holder-bg.png
+│   │   │   ├── select2.png
+│   │   │   ├── sorting-icons.gif
+│   │   │   └── sorting-icons.png
+│   │   └── js
+│   │       ├── base-admin.js
+│   │       ├── dist
+│   │       │   ├── bundle.adminstyle.min.js
+│   │       │   └── bundle.adminstyle.min.js.LICENSE.txt
+│   │       ├── libs
+│   │       │   ├── jquery.min.js
+│   │       │   └── js.cookie-2.1.2.min.js
+│   │       └── modules
+│   │           ├── dark-mode.js
+│   │           ├── datetimefields.js
+│   │           ├── drag-touch-support.js
+│   │           ├── form-submit.js
+│   │           ├── jquery.ui.touch-punch.min.js
+│   │           ├── related-widget-wrapper.js
+│   │           ├── toolbar-dropdown.js
+│   │           ├── ui-fixes.js
+│   │           └── update-notification.js
+│   ├── djangocms_alias
+│   │   └── js
+│   │       ├── alias_plugin.js
+│   │       ├── create.js
+│   │       └── dist
+│   │           └── bundle.alias.create.min.js
+│   ├── djangocms_frontend
+│   │   ├── css
+│   │   │   ├── base.css
+│   │   │   ├── base.css.map
+│   │   │   ├── button_group.css
+│   │   │   ├── button_group.css.map
+│   │   │   └── div_select.css
+│   │   ├── icon
+│   │   │   └── vendor
+│   │   │       └── assets
+│   │   └── js
+│   │       ├── auto_input.js
+│   │       ├── bundle.base.js
+│   │       ├── bundle.grid.js
+│   │       ├── bundle.link.js
+│   │       └── django_select2.js
+│   ├── djangocms_text
+│   │   ├── bundles
+│   │   │   ├── bundle.editor.min.js
+│   │   │   ├── bundle.editor.min.js.map
+│   │   │   ├── bundle.tiptap.min.js
+│   │   │   └── bundle.tiptap.min.js.map
+│   │   ├── css
+│   │   │   ├── bundle.tiptap.min.css
+│   │   │   ├── bundle.tiptap.min.css.map
+│   │   │   ├── cms.ckeditor4.css
+│   │   │   ├── cms.normalize.css
+│   │   │   └── cms.text.css
+│   │   ├── js
+│   │   │   ├── ckeditor4.js
+│   │   │   ├── ckeditor4.js.map
+│   │   │   └── editor.js.map
+│   │   └── vendor
+│   │       └── ckeditor4
+│   │           ├── adapters
+│   │           ├── config.js
+│   │           ├── contents.css
+│   │           ├── lang
+│   │           ├── plugins
+│   │           ├── skins
+│   │           └── styles.js
+│   ├── djangocms_text_ckeditor
+│   │   ├── ckeditor
+│   │   │   └── icon
+│   │   │       └── ckeditor.icons.js
+│   │   ├── icons
+│   │   │   └── link.svg
+│   │   └── js
+│   │       ├── cms.ckeditor.js
+│   │       ├── post.js
+│   │       └── pre.js
+│   ├── djangocms_versioning
+│   │   ├── css
+│   │   │   ├── object-tools.css
+│   │   │   ├── source.css
+│   │   │   └── versioning.css
+│   │   ├── js
+│   │   │   ├── actions.js
+│   │   │   ├── admin
+│   │   │   │   └── versioning-actions.js
+│   │   │   ├── base.js
+│   │   │   ├── compare.js
+│   │   │   ├── dist
+│   │   │   │   ├── bundle.prettydiff.min.js
+│   │   │   │   └── bundle.versioning.min.js
+│   │   │   ├── get-dist-path.js
+│   │   │   ├── indicators.js
+│   │   │   ├── libs
+│   │   │   │   ├── api
+│   │   │   │   ├── difflib.js
+│   │   │   │   ├── diffview.js
+│   │   │   │   ├── htmldiff.js
+│   │   │   │   └── tidy.js
+│   │   │   ├── loader.js
+│   │   │   ├── object-tools.js
+│   │   │   ├── prettydiff.js
+│   │   │   ├── utils.js
+│   │   │   └── versioning.js
+│   │   └── svg
+│   │       ├── archive.svg
+│   │       ├── discard.svg
+│   │       ├── edit.svg
+│   │       ├── lock.svg
+│   │       ├── manage_versions.svg
+│   │       ├── menu.svg
+│   │       ├── preview.svg
+│   │       ├── publish.svg
+│   │       ├── redo.svg
+│   │       ├── undo.svg
+│   │       └── unpublish.svg
+│   ├── filer
+│   │   ├── css
+│   │   │   ├── admin_filer.cms.icons.css
+│   │   │   ├── admin_filer.css
+│   │   │   ├── admin_filer.fa.icons.css
+│   │   │   ├── admin_folderpermissions.css
+│   │   │   └── maps
+│   │   │       ├── admin_filer.cms.icons.css.map
+│   │   │       ├── admin_filer.css.map
+│   │   │       ├── admin_filer.fa.icons.css.map
+│   │   │       └── admin_filer.icons.css.map
+│   │   ├── fonts
+│   │   │   ├── django-filer-iconfont.eot
+│   │   │   ├── django-filer-iconfont.svg
+│   │   │   ├── django-filer-iconfont.ttf
+│   │   │   ├── django-filer-iconfont.woff
+│   │   │   ├── django-filer-iconfont.woff2
+│   │   │   ├── FontAwesome.otf
+│   │   │   ├── fontawesome-webfont.eot
+│   │   │   ├── fontawesome-webfont.svg
+│   │   │   ├── fontawesome-webfont.ttf
+│   │   │   ├── fontawesome-webfont.woff
+│   │   │   ├── fontawesome-webfont.woff2
+│   │   │   └── src
+│   │   │       ├── arrow-down.svg
+│   │   │       ├── caret-down.svg
+│   │   │       ├── chevron-right.svg
+│   │   │       ├── download.svg
+│   │   │       ├── expand.svg
+│   │   │       ├── link.svg
+│   │   │       ├── move-to-folder.svg
+│   │   │       ├── picture.svg
+│   │   │       ├── remove-selection.svg
+│   │   │       ├── select.svg
+│   │   │       ├── th-large.svg
+│   │   │       ├── th-list.svg
+│   │   │       └── upload.svg
+│   │   ├── icons
+│   │   │   ├── cloud-up.svg
+│   │   │   ├── file-audio.svg
+│   │   │   ├── file-empty.svg
+│   │   │   ├── file-font.svg
+│   │   │   ├── file-missing.svg
+│   │   │   ├── file-pdf.svg
+│   │   │   ├── file-picture.svg
+│   │   │   ├── file-unknown.svg
+│   │   │   ├── file-video.svg
+│   │   │   ├── file-zip.svg
+│   │   │   ├── folder-dropdown.svg
+│   │   │   ├── folder-root.svg
+│   │   │   ├── folder.svg
+│   │   │   └── folder-unfiled.svg
+│   │   ├── img
+│   │   │   ├── button-bg.gif
+│   │   │   ├── close.gif
+│   │   │   ├── icon_changelink.gif
+│   │   │   ├── icon_deletelink.gif
+│   │   │   ├── loading_animation.gif
+│   │   │   ├── nav-bg.gif
+│   │   │   ├── select_item.gif
+│   │   │   ├── select_item-hover.gif
+│   │   │   └── upload_button.png
+│   │   └── js
+│   │       ├── addons
+│   │       │   ├── copy-move-files.js
+│   │       │   ├── dropdown-menu.js
+│   │       │   ├── dropzone.init.js
+│   │       │   ├── filer_popup_response.js
+│   │       │   ├── focal-point.js
+│   │       │   ├── popup_handling.js
+│   │       │   ├── table-dropzone.js
+│   │       │   ├── toggler.js
+│   │       │   ├── tooltip.js
+│   │       │   ├── upload-button.js
+│   │       │   └── widget.js
+│   │       ├── base.js
+│   │       └── libs
+│   │           ├── class.min.js
+│   │           ├── dropzone.min.js
+│   │           ├── fileuploader.min.js
+│   │           ├── jquery.cookie.min.js
+│   │           ├── jquery.min.js
+│   │           ├── jquery-ui.min.js
+│   │           └── mediator.min.js
+│   ├── img
+│   │   ├── trading1.jpg
+│   │   ├── trading2.jpg
+│   │   └── trading3.jpg
+│   ├── js
+│   │   └── scripts.js
+│   ├── parler
+│   │   └── admin
+│   │       └── parler_admin.css
+│   ├── sortedm2m
+│   │   └── selector-search.gif
+│   ├── static-files-go-here
+│   └── treebeard
+│       ├── expand-collapse.png
+│       ├── treebeard-admin.css
+│       └── treebeard-admin.js
+├── templates
+│   └── account
+│       ├── account_inactive.html
+│       ├── base_entrance.html
+│       ├── base_manage_email.html
+│       ├── base_manage.html
+│       ├── base_manage_password.html
+│       ├── base_reauthenticate.html
+│       ├── confirm_email_verification_code.html
+│       ├── confirm_login_code.html
+│       ├── email
+│       │   ├── account_already_exists_message.txt
+│       │   ├── account_already_exists_subject.txt
+│       │   ├── base_message.txt
+│       │   ├── base_notification.txt
+│       │   ├── email_changed_message.txt
+│       │   ├── email_changed_subject.txt
+│       │   ├── email_confirmation_message.txt
+│       │   ├── email_confirmation_signup_message.txt
+│       │   ├── email_confirmation_signup_subject.txt
+│       │   ├── email_confirmation_subject.txt
+│       │   ├── email_confirm_message.txt
+│       │   ├── email_confirm_subject.txt
+│       │   ├── email_deleted_message.txt
+│       │   ├── email_deleted_subject.txt
+│       │   ├── login_code_message.txt
+│       │   ├── login_code_subject.txt
+│       │   ├── password_changed_message.txt
+│       │   ├── password_changed_subject.txt
+│       │   ├── password_reset_key_message.txt
+│       │   ├── password_reset_key_subject.txt
+│       │   ├── password_reset_message.txt
+│       │   ├── password_reset_subject.txt
+│       │   ├── password_set_message.txt
+│       │   ├── password_set_subject.txt
+│       │   ├── unknown_account_message.txt
+│       │   └── unknown_account_subject.txt
+│       ├── email_change.html
+│       ├── email_confirm.html
+│       ├── email.html
+│       ├── login.html
+│       ├── logout.html
+│       ├── messages
+│       │   ├── cannot_delete_primary_email.txt
+│       │   ├── email_confirmation_failed.txt
+│       │   ├── email_confirmation_sent.txt
+│       │   ├── email_confirmed.txt
+│       │   ├── email_deleted.txt
+│       │   ├── logged_in.txt
+│       │   ├── logged_out.txt
+│       │   ├── login_code_sent.txt
+│       │   ├── password_changed.txt
+│       │   ├── password_set.txt
+│       │   ├── primary_email_set.txt
+│       │   └── unverified_primary_email.txt
+│       ├── password_change.html
+│       ├── password_reset_done.html
+│       ├── password_reset_from_key_done.html
+│       ├── password_reset_from_key.html
+│       ├── password_reset.html
+│       ├── password_set.html
+│       ├── reauthenticate.html
+│       ├── request_login_code.html
+│       ├── signup_by_passkey.html
+│       ├── signup_closed.html
+│       ├── signup.html
+│       ├── snippets
+│       │   ├── already_logged_in.html
+│       │   └── warn_no_email.html
+│       ├── verification_sent.html
+│       └── verified_email_required.html
+└── users
+    ├── admin.py
+    ├── apps.py
+    ├── __init__.py
+    ├── migrations
+    │   ├── __init__.py
+    │   └── __pycache__
+    ├── models.py
+    ├── __pycache__
+    ├── tests.py
+    └── views.py
+
+154 directories, 730 files

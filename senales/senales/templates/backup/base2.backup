@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static sekizai_tags %}
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}Señales Trading{% endblock %}</title>
+
+    <!-- Enlazar el archivo CSS global -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- Bloque para agregar CSS adicional -->
+    {% block css %}
+        {% render_block "css" %}
+    {% endblock %}
+</head>
+
+<body>
+    <!-- Encabezado común -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">Señales Trading</a>
+                <ul class="navbar-links">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="#!">Servicios</a></li>
+                    <li><a href="#!">Contactar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {{ year }} Señales Trading. Todos los derechos reservados.</p>
+            <p>
+                <a href="#!">Términos y Condiciones</a> |
+                <a href="#!">Política de Privacidad</a> |
+                <a href="#!">Contáctanos</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bloque para inyectar JavaScript -->
+    {% block js %}
+        {% render_block "js" %}
+    {% endblock %}
+</body>
+
+</html>
+

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Quiénes Somos - Señales Trading{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Quiénes Somos</h1>
+    <p><h3>En senalestrading.org, nos dedicamos a ser tu aliado confiable en el mundo del trading financiero.</h3></p>
+</div>
+
+<section class="about">
+    <div class="about-section">
+        <img src="{% static 'img/equipo.jpg' %}" alt="Nuestro equipo">
+        <h2>Nuestro equipo, nuestro mayor orgullo</h2>
+        <p>En senalestrading.org, contamos con un equipo excepcional de expertos apasionados por los mercados financieros y el trading. Cada uno de nuestros profesionales aporta una sólida experiencia en trading y análisis financiero, asegurando que el contenido que ofrecemos sea preciso, confiable y de alto valor para nuestros usuarios.</p>
+        <p>Nuestro equipo está compuesto por traders profesionales, analistas de mercado y redactores especializados, quienes trabajan en conjunto para crear contenidos que te ayuden a perfeccionar tus habilidades y a alcanzar tus objetivos financieros. Sabemos que la confianza es clave en el mundo del trading, por eso nos dedicamos a proporcionarte información verificada, actualizada y respaldada por nuestro compromiso con la excelencia.</p>
+    </div>
+
+    <div class="about-section">
+        <img src="{% static 'img/mision.jpg' %}" alt="Misión de la empresa">
+        <h2>Misión</h2>
+        <p>Empoderar a traders de todos los niveles proporcionando señales de trading confiables, contenido educativo y herramientas innovadoras que les permitan tomar decisiones informadas en los mercados financieros. Nos esforzamos por ser un socio estratégico que fomente la confianza y el éxito en el camino hacia la independencia financiera.</p>
+    </div>
+
+    <div class="about-section">
+        <img src="{% static 'img/vision.jpg' %}" alt="Visión de la empresa">
+        <h2>Visión</h2>
+        <p>Convertirnos en la plataforma líder y de mayor confianza en el sector de señales de trading, reconocida por nuestra precisión, innovación y compromiso con el éxito de nuestros usuarios. Aspiramos a ser un referente global, impulsando a la comunidad de traders hacia un futuro financiero más prometedor y sostenible.</p>
+    </div>
+
+    <div class="about-section">
+        <img src="{% static 'img/valores.jpg' %}" alt="Nuestros valores">
+        <h2>Valores</h2>
+        <ul>
+            <li><strong>Transparencia:</strong> Nos comprometemos a ofrecer información clara, precisa y verificable para construir confianza con nuestros usuarios.</li>
+            <li><strong>Excelencia:</strong> Trabajamos constantemente para superar las expectativas, entregando contenidos y herramientas de alta calidad.</li>
+            <li><strong>Innovación:</strong> Adoptamos tecnologías avanzadas para mejorar continuamente la experiencia de nuestros usuarios y mantenernos a la vanguardia del sector financiero.</li>
+            <li><strong>Compromiso:</strong> Estamos dedicados al éxito de nuestros usuarios, apoyándolos con información actualizada y soluciones efectivas.</li>
+            <li><strong>Integridad:</strong> Operamos con ética y responsabilidad, priorizando siempre el bienestar y la confianza de nuestra comunidad.</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}
+

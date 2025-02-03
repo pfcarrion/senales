@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Inicio - Señales Trading{% endblock %}
+
+
+{% block content %}
+<div class="hero">
+    <h1>Bienvenido a Señales Trading</h1>
+    <p>Accede a señales efectivas para tus operaciones binarias.</p>
+</div>
+
+<section class="features">
+    <div class="feature">
+        <img src="{% static 'img/trading1.jpg' %}" alt="Trading Gráficos">
+        <h2>Señales de Alta Eficiencia</h2>
+        <p>Recibe señales con hasta un 88% de efectividad.</p>
+    </div>
+    <div class="feature">
+        <img src="{% static 'img/trading2.jpg' %}" alt="Análisis del Mercado">
+        <h2>Análisis Profesional</h2>
+        <p>Utilizamos datos de expertos para asegurar tu éxito.</p>
+    </div>
+    <div class="feature">
+        <img src="{% static 'img/trading3.jpg' %}" alt="Trading en Tiempo Real">
+        <h2>Actualización en Tiempo Real</h2>
+        <p>Las señales se publican en tiempo real para maximizar tus ganancias.</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 Señales Trading. Todos los derechos reservados.</p>
+</footer>
+
+<style>
+    /* Hero section */
+    .hero {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f4f4f4;
+    }
+
+    /* Features section */
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+
+    .feature {
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+
+    .feature img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .feature h2 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .feature p {
+        font-size: 14px;
+        color: #666;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #222;
+        color: #fff;
+        font-size: 14px;
+    }
+</style>
+{% endblock %}
+

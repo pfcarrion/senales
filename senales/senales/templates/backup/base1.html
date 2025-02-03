@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% trans "Señales Trading" %}{% endblock %}</title>
+
+    <!-- Enlazar el archivo CSS global -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <!-- Encabezado común -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">Señales Trading</a>
+                <ul class="navbar-links">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="#!">Inscripción y Pagos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {{ year }} Señales Trading. Todos los derechos reservados.</p>
+            <p>
+                <a href="#!" id="openTerms">Términos y Condiciones</a> |
+                <a href="#!" id="openPrivacy">Política de Privacidad</a> |
+                <a href="#!">Contáctanos</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal para Términos y Condiciones -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Términos y Condiciones</h2>
+            <div id="termsContent">
+                <!-- El contenido se cargará aquí con AJAX -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Política de Privacidad -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Política de Privacidad</h2>
+            <div id="privacyContent">
+                <!-- El contenido se cargará aquí con AJAX -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bloque para inyectar JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Carga jQuery -->
+    <script>
+        // Mostrar modal para Términos y Condiciones
+        document.getElementById('openTerms').onclick = function () {
+            loadContent('{% static "html/terminocondicion.html" %}', '#termsContent');
+            openModal('termsModal');
+        };
+
+        // Mostrar modal para Política de Privacidad
+        document.getElementById('openPrivacy').onclick = function () {
+            loadContent('{% static "html/politicaprivacidad.html" %}', '#privacyContent');
+            openModal('privacyModal');
+        };
+
+        // Función para abrir un modal específico
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+
+            // Cerrar el modal al hacer clic en la "X" o fuera del modal
+            modal.querySelector('.close').onclick = function () {
+                modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+        }
+
+        // Función para cargar contenido en un modal
+        function loadContent(url, target) {
+            $.ajax({
+                url: url,
+                success: function (data) {
+                    $(target).html(data);
+                },
+                error: function () {
+                    $(target).html('<p>Error al cargar el contenido.</p>');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static sekizai_tags %}  <!-- Cargar Sekizai -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Senales Trading{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Bloque para inyectar más CSS si es necesario -->
+    {% block css %}
+        {% render_block "css" %}
+    {% endblock %}
+</head>
+<body>
+    <!-- Encabezado común -->
+    <!--
+    <header>
+        <div class="hero">
+            <h1>{% block hero_title %}Bienvenido a Señales Trading{% endblock %}</h1>
+            <p>{% block hero_subtitle %}Accede a señales efectivas para tus operaciones binarias.{% endblock %}</p>
+        </div>
+    </header>
+    -->
+    <!-- Contenido principal -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {{ year }} Señales Trading. Todos los derechos reservados.</p>
+            <p>
+                <a href="#!">Términos y Condiciones</a> |
+                <a href="#!">Política de Privacidad</a> |
+                <a href="#!">Contáctanos</a>
+            </p>
+            <div class="social-media">
+                <a href="#!"><img src="{% static 'img/facebook-icon.png' %}" alt="Facebook"></a>
+                <a href="#!"><img src="{% static 'img/twitter-icon.png' %}" alt="Twitter"></a>
+                <a href="#!"><img src="{% static 'img/instagram-icon.png' %}" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bloque para inyectar JavaScript -->
+    {% block js %}
+        {% render_block "js" %}
+    {% endblock %}
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Inicio - Señales Trading{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Bienvenido a Señales Trading</h1>
+    <p><h3>Descubre señales altamente efectivas para maximizar tus operaciones en forex y opciones binarias. Compatible con cualquier broker de confianza, nuestras alertas están diseñadas para ayudarte a operar con precisión y seguridad.</h3></p>
+</div>
+
+<section class="features">
+	<div class="feature">
+        <img src="{% static 'img/trading1.jpg' %}" alt="Gráficos de trading">
+        <h2>Señales de Alta Eficiencia</h2>
+	<p><h3>"Impulsa tus ganancias con señales de alta efectividad"</h3></p>
+	<p>Recibe señales de trading con una precisión de hasta el 88%, diseñadas para maximizar tus resultados. Aprovecha alertas confiables que te guiarán hacia operaciones más rentables y toma el control de tus inversiones con confianza.</p>
+	<p>  </p>
+	<p><h4>¡Únete ahora y lleva tus inversiones al siguiente nivel!.</h4></p>
+    </div>
+    <div class="feature">
+        <img src="{% static 'img/trading2.jpg' %}" alt="Análisis del Mercado">
+        <h2>Análisis Profesional</h2>
+	<p>Confía en estrategias respaldadas por expertos para alcanzar tus metas. Con una tasa de pérdida de solo un 2%, maximiza tus resultados con precisión y asegura tu éxito con confianza.</p>
+    </div>
+    <div class="feature">
+        <img src="{% static 'img/trading3.jpg' %}" alt="Trading en tiempo real">
+        <h2>Actualización en Tiempo Real</h2>
+        <p>Recibe señales instantáneas al momento, diseñadas para maximizar tus ganancias en cada operación.</p>
+    </div>
+</section>
+{% endblock %}
+

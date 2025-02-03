@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+
+{% load widget_tweaks %}
+
+{% block title %}Suscripción a Señales de Trading{% endblock %}
+
+{% block content %}
+
+<!-- Modal de Error -->
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="errorModalLabel">Error en el Pago</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hubo un error con el pago. Por favor, inténtalo de nuevo.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="hero text-center my-4">
+  <h1 class="mb-3">Suscríbete a nuestras señales</h1>
+  <p><h3>
+    Completa el formulario para unirte y recibir nuestras señales exclusivas. Selecciona tu plan de suscripción y procede con el pago.
+  </h3></p>
+</div>
+
+<div class="container my-5">
+  <form method="post" novalidate>
+    {% csrf_token %}
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        <!-- Card para el formulario -->
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h4 class="card-title text-center mb-4">Formulario de Suscripción</h4>
+
+            <!-- Mensajes de error generales -->
+            {% if form.non_field_errors %}
+            <div class="alert alert-danger">
+              {% for error in form.non_field_errors %}
+              <p>{{ error }}</p>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <!-- Campo de Nombres -->
+            <div class="mb-3">
+              <label for="id_nombre" class="form-label">Nombres:</label>
+              {{ form.nombre|add_class:"form-control" }}
+              {% if form.nombre.errors %}
+              <div class="text-danger small">
+                {% for error in form.nombre.errors %}{{ error }}{% endfor %}
+              </div>
+              {% endif %}
+            </div>
+
+            <!-- Campo de Apellidos -->
+            <div class="mb-3">
+              <label for="id_apellido" class="form-label">Apellidos:</label>
+              {{ form.apellido|add_class:"form-control" }}
+              {% if form.apellido.errors %}
+              <div class="text-danger small">
+                {% for error in form.apellido.errors %}{{ error }}{% endfor %}
+              </div>
+              {% endif %}
+            </div>
+
+            <!-- Campo de País -->
+            <div class="mb-3">
+              <label for="id_pais" class="form-label">País:</label>
+              {{ form.pais|add_class:"form-select" }}
+              {% if form.pais.errors %}
+              <div class="text-danger small">
+                {% for error in form.pais.errors %}{{ error }}{% endfor %}
+              </div>
+              {% endif %}
+            </div>
+
+            <!-- Campo de Correo Electrónico -->
+            <div class="mb-3">
+              <label for="id_correo" class="form-label">Correo Electrónico:</label>
+              {{ form.correo|add_class:"form-control" }}
+              {% if form.correo.errors %}
+              <div class="text-danger small">
+                {% for error in form.correo.errors %}{{ error }}{% endfor %}
+              </div>
+              {% endif %}
+            </div>
+
+            <!-- Selección de Plan -->
+            <div class="mb-3">
+              <label for="plan" class="form-label">Plan de Suscripción:</label>
+              <select id="plan" name="plan" class="form-select" required>
+                <option value="" disabled selected>Selecciona un plan...</option>
+                <option value="mensual">Mensual</option>
+                <option value="trimestral">Trimestral</option>
+                <option value="semestral">Semestral</option>
+                <option value="anual">Anual</option>
+              </select>
+            </div>
+
+            <!-- Campo de Monto -->
+            <div class="mb-3">
+              <label for="id_monto" class="form-label">Monto:</label>
+              <!--  <input id="id_monto" type="text" class="form-control" readonly placeholder="Selecciona un plan para calcular el monto"> Se presento un inconveniente Si el campo id_monto tiene el atributo readonly, su valor no se enviará al backend por defecto. Esto se debe a que los campos readonly no se incluyen en el envío del formulario.-->
+              <input id="id_monto" name="monto" type="text" class="form-control" readonly placeholder="Selecciona un plan para calcular el monto">
+            </div>
+	    <p>
+            <!-- Botón de suscripción -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">Suscribirse</button>
+            </div>
+          </div>
+        </div>
+
+	<div class="mb-3">
+    		<label for="id_es_recursiva" class="form-label">¿Suscripción recurrente?</label>
+    	    {{ form.es_recursiva|add_class:"form-check-input" }}
+    	    {% if form.es_recursiva.errors %}
+        	<div class="text-danger small">
+            		{% for error in form.es_recursiva.errors %}{{ error }}{% endfor %}
+        	</div>
+    	    {% endif %}
+	</div>
+
+
+        <!-- Mensajes de éxito o error -->
+        {% if messages %}
+        <div class="mt-4">
+          {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<script>
+  //document.addEventListener("DOMContentLoaded", function () {
+    const planSelect = document.getElementById("plan");
+    const montoInput = document.getElementById("id_monto");
+
+  // Mapeo de planes a montos
+  const precios = {
+    mensual: "10.00",
+    trimestral: "25.00",
+    semestral: "50.00",
+    anual: "100.00"
+  };
+//function verificar si no el codigo quedaria asi para corregir:   
+// planSelect.addEventListener("change", () => {  
+//planSelect.addEventListener("change", function () => {
+  
+    // Escuchar el evento de cambio en el select del plan
+    planSelect.addEventListener("change", function () {
+    const planSeleccionado = planSelect.value;              // Obtiene el valor del plan seleccionado
+    montoInput.value = precios[planSeleccionado] || "0.00"; // Actualizar monto
+  });
+
+  // Configuración de PayPal Smart Buttons
+  paypal.Buttons({
+    createOrder: function (data, actions) {
+      const monto = montoInput.value; // Obtiene el monto actual
+      if (!monto) {
+        alert("Por favor, selecciona un plan antes de continuar.");
+        return;
+      }
+
+      return actions.order.create({
+        purchase_units: [
+          {
+            amount: {
+              value: monto // Usa el monto dinámico
+            }
+          }
+        ]
+      });
+    },
+    onApprove: function (data, actions) {
+      return actions.order.capture().then(function (details) {
+        alert("Pago realizado con éxito por " + details.payer.name.given_name);
+        // Aquí puedes redirigir o guardar información en tu backend
+      });
+    },
+    onError: function (err) {
+      console.error(err);
+      // alert("Hubo un error con el pago. Por favor, inténtalo de nuevo.");
+      // Mostrar el modal de error
+      const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+      errorModal.show();
+    }
+  }).render("#paypal-button-container");
+</script>
+{% endblock %}
+

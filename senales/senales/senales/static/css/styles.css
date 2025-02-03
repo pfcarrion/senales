@@ -1,0 +1,429 @@
+/* Establecer variables para los colores y tamaños */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ffffff;
+    --accent-color: #ff9800;
+    --footer-bg: #222;
+    --text-color: #333;
+}
+
+.site-title {
+    color: #17202a; /* Cambia a tu color deseado */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.navbar-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-media img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    filter: invert(100%);
+}
+.social-media img:hover {
+    filter: invert(50%);
+}
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+/* Para tamano de imagen  */
+img{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+/* Ajustes generales */
+.hero {
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/* Sección principal */
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section:nth-child(even) {
+    flex-direction: row-reverse;
+    background-color: #e9ecef;
+}
+
+.about-section img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h2 {
+    color: #007bff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+.about-section ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.about-section ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo para valores */
+.about-section ul li strong {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Respuesta en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* El modal (popup) */
+.modal {
+    display: none; /* Ocultado por defecto */
+    position: fixed; /* Fija el modal en la pantalla */
+    z-index: 1; /* Asegura que el modal esté por encima del contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto; /* Permite desplazamiento si el contenido es largo */
+}
+
+/* Estilo de cerrar (X) */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para el texto de los términos */
+.terms-text {
+    font-size: 14px;
+    line-height: 1.6;
+    max-height: 60vh;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de continuar */
+#continueButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#continueButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+/* Estilos para el formulario */
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo básico para el enlace */
+.nav-item {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black; /* Color negro por defecto */
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    overflow: hidden;
+    z-index: 1; /* Asegura que el enlace esté por encima de los efectos */
+}
+
+/* Efecto de animación de trading (desplazamiento de izquierda a derecha) */
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #007BFF; /* Azul brillante */
+    transition: all 0.3s ease-in-out;
+    z-index: -1; /* Asegura que el fondo azul no bloqueé la interactividad */
+}
+
+/* Efecto cuando el usuario pasa el mouse sobre el enlace */
+.nav-item:hover {
+    color: white; /* Cambia el color del texto a blanco cuando pasa el mouse */
+    cursor: pointer;
+}
+
+/* Hacer que el fondo azul se desplace de izquierda a derecha cuando se pasa el mouse */
+.nav-item:hover::before {
+    left: 0;
+}
+
+/* Agregar sombra suave cuando pasa el mouse */
+.nav-item:hover {
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación de 'trading' o movimiento */
+.nav-item {
+    animation: moveLeftRight 2s infinite alternate; /* Aplicamos la animación */
+}
+
+/* Definir la animación que mueve el enlace de izquierda a derecha */
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+
+/* Personalización de etiquetas y campos */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

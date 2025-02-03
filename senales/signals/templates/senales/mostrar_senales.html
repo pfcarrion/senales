@@ -1,0 +1,9 @@
+{% for señal in senales %}
+    <div>
+        <p>Divisa: {{ señal.divisa }}</p>
+        <p>Dirección: {{ señal.direccion }}</p>
+        <p>Tiempo: {{ señal.tiempo }}</p>
+        <p>Enviado: {{ señal.timestamp }}</p>
+        <p>Caducidad: {{ señal.caducidad }}</p>
+    </div>
+{% endfor %}

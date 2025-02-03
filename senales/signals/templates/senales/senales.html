@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Señales de Trading</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Señales de Trading</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Divisa</th>
+                <th>Dirección</th>
+                <th>Tiempo</th>
+                <th>Timestamp</th>
+                <th>Caducidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for señal in señales %}
+            <tr>
+                <td>{{ señal.divisa }}</td>
+                <td>{{ señal.direccion }}</td>
+                <td>{{ señal.tiempo }}</td>
+                <td>{{ señal.timestamp }}</td>
+                <td>{{ señal.caducidad }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

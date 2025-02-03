@@ -1,0 +1,1138 @@
+.
+├── env
+│   ├── bin
+│   │   ├── activate
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── Activate.ps1
+│   │   ├── autopep8
+│   │   ├── black
+│   │   ├── blackd
+│   │   ├── chardetect
+│   │   ├── dateparser-download
+│   │   ├── django-admin
+│   │   ├── djangocms
+│   │   ├── normalizer
+│   │   ├── pip
+│   │   ├── pip3
+│   │   ├── pip3.12
+│   │   ├── pipdeptree
+│   │   ├── pycodestyle
+│   │   ├── python -> python3
+│   │   ├── python3 -> /usr/bin/python3
+│   │   ├── python3.12 -> python3
+│   │   ├── sqlformat
+│   │   └── svg2pdf
+│   ├── include
+│   │   └── python3.12
+│   ├── lib
+│   │   └── python3.12
+│   │       └── site-packages
+│   │           ├── 30fcd23745efe32ce681__mypyc.cpython-312-x86_64-linux-gnu.so
+│   │           ├── aiohappyeyeballs
+│   │           ├── aiohappyeyeballs-2.4.4.dist-info
+│   │           ├── aiohttp
+│   │           ├── aiohttp-3.11.11.dist-info
+│   │           ├── aiosignal
+│   │           ├── aiosignal-1.3.2.dist-info
+│   │           ├── allauth
+│   │           ├── asgiref
+│   │           ├── asgiref-3.8.1.dist-info
+│   │           ├── attr
+│   │           ├── attrs
+│   │           ├── attrs-24.3.0.dist-info
+│   │           ├── autopep8-2.3.1.dist-info
+│   │           ├── autopep8.py
+│   │           ├── binance
+│   │           ├── black
+│   │           ├── black-24.10.0.dist-info
+│   │           ├── blackd
+│   │           ├── _black_version.py
+│   │           ├── blib2to3
+│   │           ├── certifi
+│   │           ├── certifi-2024.12.14.dist-info
+│   │           ├── cffi
+│   │           ├── cffi-1.17.1.dist-info
+│   │           ├── _cffi_backend.cpython-312-x86_64-linux-gnu.so
+│   │           ├── chardet
+│   │           ├── chardet-5.2.0.dist-info
+│   │           ├── charset_normalizer
+│   │           ├── charset_normalizer-3.4.1.dist-info
+│   │           ├── classytags
+│   │           ├── click
+│   │           ├── click-8.1.8.dist-info
+│   │           ├── cms
+│   │           ├── Crypto
+│   │           ├── cryptography
+│   │           ├── cryptography-44.0.0.dist-info
+│   │           ├── cssselect2
+│   │           ├── cssselect2-0.7.0.dist-info
+│   │           ├── dateparser
+│   │           ├── dateparser-1.2.0.dist-info
+│   │           ├── dateparser_cli
+│   │           ├── dateparser_data
+│   │           ├── dateparser_scripts
+│   │           ├── dateutil
+│   │           ├── decouple.py
+│   │           ├── _distutils_hack
+│   │           ├── distutils-precedence.pth
+│   │           ├── django
+│   │           ├── Django-5.0.dist-info
+│   │           ├── django_allauth-65.3.1.dist-info
+│   │           ├── django_classy_tags-4.1.0.dist-info
+│   │           ├── django_cms-4.1.4.dist-info
+│   │           ├── djangocms_admin_style
+│   │           ├── djangocms_admin_style-3.3.1.dist-info
+│   │           ├── djangocms_alias
+│   │           ├── djangocms_alias-2.0.1.dist-info
+│   │           ├── djangocms_attributes_field
+│   │           ├── djangocms_attributes_field-4.0.0.dist-info
+│   │           ├── djangocms_bootstrap5
+│   │           ├── djangocms_bootstrap5-0.1.0.dist-info
+│   │           ├── djangocms_frontend
+│   │           ├── djangocms_frontend-1.3.5.dist-info
+│   │           ├── djangocms_icon
+│   │           ├── djangocms_icon-2.1.0.dist-info
+│   │           ├── djangocms_link
+│   │           ├── djangocms_link-5.0.0.dist-info
+│   │           ├── djangocms_picture
+│   │           ├── djangocms_picture-4.1.1.dist-info
+│   │           ├── djangocms_text
+│   │           ├── djangocms_text-0.4.0.dist-info
+│   │           ├── djangocms_text_ckeditor
+│   │           ├── djangocms_text_ckeditor-5.1.6.dist-info
+│   │           ├── djangocms_versioning
+│   │           ├── djangocms_versioning-2.1.0.dist-info
+│   │           ├── django_countries
+│   │           ├── django_countries-7.6.1.dist-info
+│   │           ├── django_entangled-0.5.4.dist-info
+│   │           ├── django_extensions
+│   │           ├── django_extensions-3.2.3.dist-info
+│   │           ├── django_filer-3.3.1.dist-info
+│   │           ├── django_formtools-2.5.1.dist-info
+│   │           ├── django_fsm
+│   │           ├── django_fsm-2.8.2.dist-info
+│   │           ├── django_parler-2.3.dist-info
+│   │           ├── django_polymorphic-3.1.0.dist-info
+│   │           ├── django_sekizai-4.1.0.dist-info
+│   │           ├── django_treebeard-4.7.1.dist-info
+│   │           ├── django_widget_tweaks-1.5.0.dist-info
+│   │           ├── easy_thumbnails
+│   │           ├── easy_thumbnails-2.10.dist-info
+│   │           ├── entangled
+│   │           ├── filer
+│   │           ├── formtools
+│   │           ├── frozenlist
+│   │           ├── frozenlist-1.5.0.dist-info
+│   │           ├── html5lib
+│   │           ├── html5lib-1.1.dist-info
+│   │           ├── idna
+│   │           ├── idna-3.10.dist-info
+│   │           ├── lxml
+│   │           ├── lxml-5.3.0.dist-info
+│   │           ├── markupsafe
+│   │           ├── MarkupSafe-3.0.2.dist-info
+│   │           ├── menus
+│   │           ├── multidict
+│   │           ├── multidict-6.1.0.dist-info
+│   │           ├── mypy_extensions-1.0.0.dist-info
+│   │           ├── mypy_extensions.py
+│   │           ├── nh3
+│   │           ├── nh3-0.2.20.dist-info
+│   │           ├── OpenSSL
+│   │           ├── packaging
+│   │           ├── packaging-24.2.dist-info
+│   │           ├── parler
+│   │           ├── pathspec
+│   │           ├── pathspec-0.12.1.dist-info
+│   │           ├── paypalrestsdk
+│   │           ├── paypalrestsdk-1.13.3.dist-info
+│   │           ├── PIL
+│   │           ├── pillow-11.0.0.dist-info
+│   │           ├── pillow.libs
+│   │           ├── pip
+│   │           ├── pip-24.0.dist-info
+│   │           ├── pip-24.3.1.dist-info
+│   │           ├── pipdeptree
+│   │           ├── pipdeptree-2.24.0.dist-info
+│   │           ├── pkg_resources
+│   │           ├── platformdirs
+│   │           ├── platformdirs-4.3.6.dist-info
+│   │           ├── polymorphic
+│   │           ├── propcache
+│   │           ├── propcache-0.2.1.dist-info
+│   │           ├── psycopg
+│   │           ├── psycopg2
+│   │           ├── psycopg2-2.9.10.dist-info
+│   │           ├── psycopg-3.2.3.dist-info
+│   │           ├── __pycache__
+│   │           ├── pycodestyle-2.12.1.dist-info
+│   │           ├── pycodestyle.py
+│   │           ├── pycparser
+│   │           ├── pycparser-2.22.dist-info
+│   │           ├── pycryptodome-3.21.0.dist-info
+│   │           ├── pyOpenSSL-24.3.0.dist-info
+│   │           ├── python_binance-1.0.27.dist-info
+│   │           ├── python_dateutil-2.9.0.post0.dist-info
+│   │           ├── python_decouple-3.8.dist-info
+│   │           ├── pytz
+│   │           ├── pytz-2024.2.dist-info
+│   │           ├── regex
+│   │           ├── regex-2024.11.6.dist-info
+│   │           ├── reportlab
+│   │           ├── reportlab-4.2.5.dist-info
+│   │           ├── requests
+│   │           ├── requests-2.32.3.dist-info
+│   │           ├── rust
+│   │           ├── sekizai
+│   │           ├── setuptools
+│   │           ├── setuptools-75.6.0.dist-info
+│   │           ├── six-1.17.0.dist-info
+│   │           ├── six.py
+│   │           ├── sqlparse
+│   │           ├── sqlparse-0.5.3.dist-info
+│   │           ├── stripe
+│   │           ├── stripe-11.4.1.dist-info
+│   │           ├── svglib
+│   │           ├── svglib-1.5.1.dist-info
+│   │           ├── tests
+│   │           ├── tinycss2
+│   │           ├── tinycss2-1.4.0.dist-info
+│   │           ├── treebeard
+│   │           ├── typing_extensions-4.12.2.dist-info
+│   │           ├── typing_extensions.py
+│   │           ├── tzlocal
+│   │           ├── tzlocal-5.2.dist-info
+│   │           ├── urllib3
+│   │           ├── urllib3-2.3.0.dist-info
+│   │           ├── webencodings
+│   │           ├── webencodings-0.5.1.dist-info
+│   │           ├── websockets
+│   │           ├── websockets-14.2.dist-info
+│   │           ├── werkzeug
+│   │           ├── werkzeug-3.1.3.dist-info
+│   │           ├── widget_tweaks
+│   │           ├── yarl
+│   │           └── yarl-1.18.3.dist-info
+│   ├── lib64 -> lib
+│   ├── pyvenv.cfg
+│   └── share
+│       └── man
+│           └── man1
+│               └── svg2pdf.1
+├── estructura.txt
+└── senales
+    ├── blog
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── cms_apps.py
+    │   ├── cms_plugins.py
+    │   ├── forms.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   ├── 0001_initial.py
+    │   │   ├── 0002_blogpost_rename_fecha_comentario_fecha_creacion_and_more.py
+    │   │   ├── __init__.py
+    │   │   └── __pycache__
+    │   │       ├── 0001_initial.cpython-312.pyc
+    │   │       ├── 0002_blogpost_rename_fecha_comentario_fecha_creacion_and_more.cpython-312.pyc
+    │   │       └── __init__.cpython-312.pyc
+    │   ├── models.py
+    │   ├── __pycache__
+    │   │   ├── admin.cpython-312.pyc
+    │   │   ├── apps.cpython-312.pyc
+    │   │   ├── cms_apps.cpython-312.pyc
+    │   │   ├── cms_plugins.cpython-312.pyc
+    │   │   ├── forms.cpython-312.pyc
+    │   │   ├── __init__.cpython-312.pyc
+    │   │   ├── models.cpython-312.pyc
+    │   │   ├── urls.cpython-312.pyc
+    │   │   └── views.cpython-312.pyc
+    │   ├── static
+    │   │   └── blog
+    │   │       └── style.css
+    │   ├── templates
+    │   │   ├── blogs
+    │   │   │   ├── detalle_blog.html
+    │   │   │   └── lista_blog.html
+    │   │   └── cms_plugins
+    │   │       └── blog_plugin.html
+    │   ├── tests.py
+    │   ├── urls.py
+    │   └── views.py
+    ├── cert.crt
+    ├── cert.key
+    ├── cert.pem
+    ├── core
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── cms_apps.py
+    │   ├── forms.backup
+    │   ├── forms.py
+    │   ├── __init__.py
+    │   ├── localhost.crt
+    │   ├── localhost.csr
+    │   ├── localhost.key
+    │   ├── migrations
+    │   │   ├── 0001_initial.py
+    │   │   ├── 0002_blog_alter_subscription_correo.py
+    │   │   ├── 0003_remove_subscription_tipo_subscription_plan_and_more.py
+    │   │   ├── 0004_alter_subscription_usuario.py
+    │   │   ├── 0005_subscription_metodo_pago_subscription_payer_email_and_more.py
+    │   │   ├── __init__.py
+    │   │   └── __pycache__
+    │   │       ├── 0001_initial.cpython-312.pyc
+    │   │       ├── 0002_blog_alter_subscription_correo.cpython-312.pyc
+    │   │       ├── 0003_remove_subscription_tipo_subscription_plan_and_more.cpython-312.pyc
+    │   │       ├── 0004_alter_subscription_usuario.cpython-312.pyc
+    │   │       ├── 0005_subscription_metodo_pago_subscription_payer_email_and_more.cpython-312.pyc
+    │   │       └── __init__.cpython-312.pyc
+    │   ├── models.py
+    │   ├── __pycache__
+    │   │   ├── admin.cpython-312.pyc
+    │   │   ├── apps.cpython-312.pyc
+    │   │   ├── cms_apps.cpython-312.pyc
+    │   │   ├── forms.cpython-312.pyc
+    │   │   ├── __init__.cpython-312.pyc
+    │   │   ├── models.cpython-312.pyc
+    │   │   └── views.cpython-312.pyc
+    │   ├── templates
+    │   │   └── core
+    │   │       ├── backup
+    │   │       ├── binance_payment.html
+    │   │       ├── crear_suscripcion.html
+    │   │       ├── crear_usuario.html
+    │   │       ├── payment1.html.save
+    │   │       ├── paymentbackup.html
+    │   │       ├── payment_cancel.html
+    │   │       ├── payment.html
+    │   │       ├── payment_success.html
+    │   │       ├── payment_test.html
+    │   │       ├── register_after_payment.html
+    │   │       ├── secure_data.html
+    │   │       ├── seleccionar_metodo_pago.html
+    │   │       └── subscribe.html
+    │   ├── templatetags
+    │   │   ├── custom_filters.py
+    │   │   └── __pycache__
+    │   │       └── custom_filters.cpython-312.pyc
+    │   ├── tests.py
+    │   ├── urls.py
+    │   └── views.py
+    ├── db.sqlite3
+    ├── estructura.txt
+    ├── key.pem
+    ├── LICENSE
+    ├── locale
+    │   ├── en
+    │   │   └── LC_MESSAGES
+    │   │       ├── django.mo
+    │   │       └── django.po
+    │   └── es
+    │       └── LC_MESSAGES
+    │           ├── django.mo
+    │           └── django.po
+    ├── management
+    │   └── commands
+    │       ├── bot_session.session
+    │       ├── formatodegrupos.txt
+    │       ├── mensajes_recibidos.txt
+    │       ├── nueva_name.session
+    │       ├── runbot.py
+    │       ├── runbot.py_copy
+    │       └── runbot.py_copy2
+    ├── manage.py
+    ├── payments
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── README.md
+    ├── requirements.in
+    ├── requirements.txt
+    ├── senales
+    │   ├── asgi.py
+    │   ├── backup
+    │   │   ├── urls.py.copy
+    │   │   └── urls.py.copy2
+    │   ├── __init__.py
+    │   ├── locale
+    │   │   ├── en
+    │   │   │   └── LC_MESSAGES
+    │   │   └── es
+    │   │       └── LC_MESSAGES
+    │   ├── __pycache__
+    │   │   ├── __init__.cpython-312.pyc
+    │   │   ├── settings.cpython-312.pyc
+    │   │   ├── urls.cpython-312.pyc
+    │   │   └── wsgi.cpython-312.pyc
+    │   ├── settings.py
+    │   ├── static
+    │   │   ├── css
+    │   │   │   ├── backup
+    │   │   │   ├── playes.css
+    │   │   │   └── styles.css
+    │   │   ├── html
+    │   │   │   ├── politicaprivacidad.html
+    │   │   │   └── terminocondicion.html
+    │   │   ├── img
+    │   │   │   ├── equipo.jpg
+    │   │   │   ├── mision.jpg
+    │   │   │   ├── trading1.jpg
+    │   │   │   ├── trading2.jpg
+    │   │   │   ├── trading3.jpg
+    │   │   │   ├── valores.jpg
+    │   │   │   └── vision.jpg
+    │   │   ├── js
+    │   │   │   ├── custom.js
+    │   │   │   └── scripts.js
+    │   │   └── static-files-go-here
+    │   ├── templates
+    │   │   ├── backup
+    │   │   │   ├── base1.html
+    │   │   │   ├── base2.backup
+    │   │   │   ├── base3.backup
+    │   │   │   ├── base.backup
+    │   │   │   ├── base.backup4
+    │   │   │   ├── inicio2.backup
+    │   │   │   └── inicio.backup
+    │   │   ├── base.html
+    │   │   ├── inicio.html
+    │   │   └── quienesomos.html
+    │   ├── urls.backup
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── signals
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── __init__.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── staticfiles
+    │   ├── admin
+    │   │   ├── css
+    │   │   │   ├── autocomplete.css
+    │   │   │   ├── base.css
+    │   │   │   ├── changelists.css
+    │   │   │   ├── dark_mode.css
+    │   │   │   ├── dashboard.css
+    │   │   │   ├── forms.css
+    │   │   │   ├── login.css
+    │   │   │   ├── nav_sidebar.css
+    │   │   │   ├── responsive.css
+    │   │   │   ├── responsive_rtl.css
+    │   │   │   ├── rtl.css
+    │   │   │   ├── vendor
+    │   │   │   └── widgets.css
+    │   │   ├── img
+    │   │   │   ├── calendar-icons.svg
+    │   │   │   ├── gis
+    │   │   │   ├── icon_addlink.gif
+    │   │   │   ├── icon_addlink_large.gif
+    │   │   │   ├── icon-addlink.svg
+    │   │   │   ├── icon-alert.svg
+    │   │   │   ├── icon_calendar.gif
+    │   │   │   ├── icon-calendar.svg
+    │   │   │   ├── icon_changelink.gif
+    │   │   │   ├── icon-changelink.svg
+    │   │   │   ├── icon_clock.gif
+    │   │   │   ├── icon-clock.svg
+    │   │   │   ├── icon_deletelink.gif
+    │   │   │   ├── icon-deletelink.svg
+    │   │   │   ├── icon-hidelink.svg
+    │   │   │   ├── icon-no.gif
+    │   │   │   ├── icon-no.svg
+    │   │   │   ├── icon_searchbox.png
+    │   │   │   ├── icon-unknown-alt.svg
+    │   │   │   ├── icon-unknown.gif
+    │   │   │   ├── icon-unknown.svg
+    │   │   │   ├── icon-viewlink.svg
+    │   │   │   ├── icon-yes.gif
+    │   │   │   ├── icon-yes.svg
+    │   │   │   ├── inline-delete.svg
+    │   │   │   ├── LICENSE
+    │   │   │   ├── README.txt
+    │   │   │   ├── search.svg
+    │   │   │   ├── selector-icons.gif
+    │   │   │   ├── selector-icons.svg
+    │   │   │   ├── selector-search.gif
+    │   │   │   ├── sorting-icons.svg
+    │   │   │   ├── tooltag-add.svg
+    │   │   │   └── tooltag-arrowright.svg
+    │   │   └── js
+    │   │       ├── actions.js
+    │   │       ├── admin
+    │   │       ├── autocomplete.js
+    │   │       ├── calendar.js
+    │   │       ├── cancel.js
+    │   │       ├── change_form.js
+    │   │       ├── collapse.js
+    │   │       ├── core.js
+    │   │       ├── filters.js
+    │   │       ├── inlines.js
+    │   │       ├── jquery.init.js
+    │   │       ├── nav_sidebar.js
+    │   │       ├── popup_response.js
+    │   │       ├── prepopulate_init.js
+    │   │       ├── prepopulate.js
+    │   │       ├── SelectBox.js
+    │   │       ├── SelectFilter2.js
+    │   │       ├── theme.js
+    │   │       ├── urlify.js
+    │   │       └── vendor
+    │   ├── blog
+    │   │   └── style.css
+    │   ├── cms
+    │   │   ├── css
+    │   │   │   └── 4.1.4
+    │   │   ├── fonts
+    │   │   │   ├── 4.1.4
+    │   │   │   └── src
+    │   │   ├── images
+    │   │   │   └── sitemap-li-bg.jpg
+    │   │   ├── img
+    │   │   │   ├── favicon.png
+    │   │   │   ├── icons
+    │   │   │   ├── loader@2x.gif
+    │   │   │   ├── loader.gif
+    │   │   │   ├── pagetree
+    │   │   │   └── toolbar
+    │   │   ├── js
+    │   │   │   ├── admin
+    │   │   │   ├── admin.base.js
+    │   │   │   ├── admin.changeform.js
+    │   │   │   ├── admin.pagetree.js
+    │   │   │   ├── dist
+    │   │   │   ├── libs
+    │   │   │   ├── modules
+    │   │   │   ├── polyfills
+    │   │   │   ├── select2
+    │   │   │   ├── toolbar.js
+    │   │   │   └── widgets
+    │   │   └── sass
+    │   │       ├── cms.admin.scss
+    │   │       ├── cms.base.scss
+    │   │       ├── cms.pagetree.scss
+    │   │       ├── cms.welcome.scss
+    │   │       ├── cms.wizard.scss
+    │   │       ├── components
+    │   │       ├── libs
+    │   │       ├── mixins
+    │   │       └── settings
+    │   ├── css
+    │   │   ├── backup
+    │   │   │   └── styles.backup
+    │   │   └── styles.css
+    │   ├── djangocms_admin_style
+    │   │   ├── css
+    │   │   │   └── djangocms-admin.css
+    │   │   ├── fonts
+    │   │   │   ├── django-admin-iconfont.eot
+    │   │   │   ├── django-admin-iconfont.svg
+    │   │   │   ├── django-admin-iconfont.ttf
+    │   │   │   ├── django-admin-iconfont.woff
+    │   │   │   ├── django-admin-iconfont.woff2
+    │   │   │   ├── django-admin-icons.eot
+    │   │   │   ├── django-admin-icons.svg
+    │   │   │   ├── django-admin-icons.ttf
+    │   │   │   ├── django-admin-icons.woff
+    │   │   │   └── src
+    │   │   ├── img
+    │   │   │   ├── bg-pattern.jpg
+    │   │   │   ├── bg-pattern-light.jpg
+    │   │   │   ├── django-cms-logo.png
+    │   │   │   ├── drag-light.png
+    │   │   │   ├── drag-norepeat.png
+    │   │   │   ├── drag.png
+    │   │   │   ├── icon_addlink@2x.gif
+    │   │   │   ├── icon_addlink_large@2x.gif
+    │   │   │   ├── icon_addlink_large.gif
+    │   │   │   ├── icon_arrow_down.png
+    │   │   │   ├── icon_arrow_right.png
+    │   │   │   ├── icon_calendar@2x.gif
+    │   │   │   ├── icon_changelink@2x.gif
+    │   │   │   ├── icon_changelink_white@2x.png
+    │   │   │   ├── icon_changelink_white.png
+    │   │   │   ├── icon_clock@2x.gif
+    │   │   │   ├── icon_deletelink@2x.png
+    │   │   │   ├── icon_deletelink.png
+    │   │   │   ├── icon_searchbox@2x.png
+    │   │   │   ├── icon_search_white@2x.png
+    │   │   │   ├── icon_softroot@2x.png
+    │   │   │   ├── icon_softroot.png
+    │   │   │   ├── pluginlist-holder-bg.png
+    │   │   │   ├── select2.png
+    │   │   │   ├── sorting-icons.gif
+    │   │   │   └── sorting-icons.png
+    │   │   └── js
+    │   │       ├── base-admin.js
+    │   │       ├── dist
+    │   │       ├── libs
+    │   │       └── modules
+    │   ├── djangocms_alias
+    │   │   └── js
+    │   │       ├── alias_plugin.js
+    │   │       ├── create.js
+    │   │       └── dist
+    │   ├── djangocms_frontend
+    │   │   ├── css
+    │   │   │   ├── base.css
+    │   │   │   ├── base.css.map
+    │   │   │   ├── button_group.css
+    │   │   │   ├── button_group.css.map
+    │   │   │   └── div_select.css
+    │   │   ├── icon
+    │   │   │   └── vendor
+    │   │   └── js
+    │   │       ├── auto_input.js
+    │   │       ├── bundle.base.js
+    │   │       ├── bundle.grid.js
+    │   │       ├── bundle.link.js
+    │   │       └── django_select2.js
+    │   ├── djangocms_text
+    │   │   ├── bundles
+    │   │   │   ├── bundle.editor.min.js
+    │   │   │   ├── bundle.editor.min.js.map
+    │   │   │   ├── bundle.tiptap.min.js
+    │   │   │   └── bundle.tiptap.min.js.map
+    │   │   ├── css
+    │   │   │   ├── bundle.tiptap.min.css
+    │   │   │   ├── bundle.tiptap.min.css.map
+    │   │   │   ├── cms.ckeditor4.css
+    │   │   │   ├── cms.normalize.css
+    │   │   │   └── cms.text.css
+    │   │   ├── js
+    │   │   │   ├── ckeditor4.js
+    │   │   │   ├── ckeditor4.js.map
+    │   │   │   └── editor.js.map
+    │   │   └── vendor
+    │   │       └── ckeditor4
+    │   ├── djangocms_text_ckeditor
+    │   │   ├── ckeditor
+    │   │   │   └── icon
+    │   │   ├── icons
+    │   │   │   └── link.svg
+    │   │   └── js
+    │   │       ├── cms.ckeditor.js
+    │   │       ├── post.js
+    │   │       └── pre.js
+    │   ├── djangocms_versioning
+    │   │   ├── css
+    │   │   │   ├── object-tools.css
+    │   │   │   ├── source.css
+    │   │   │   └── versioning.css
+    │   │   ├── js
+    │   │   │   ├── actions.js
+    │   │   │   ├── admin
+    │   │   │   ├── base.js
+    │   │   │   ├── compare.js
+    │   │   │   ├── dist
+    │   │   │   ├── get-dist-path.js
+    │   │   │   ├── indicators.js
+    │   │   │   ├── libs
+    │   │   │   ├── loader.js
+    │   │   │   ├── object-tools.js
+    │   │   │   ├── prettydiff.js
+    │   │   │   ├── utils.js
+    │   │   │   └── versioning.js
+    │   │   └── svg
+    │   │       ├── archive.svg
+    │   │       ├── discard.svg
+    │   │       ├── edit.svg
+    │   │       ├── lock.svg
+    │   │       ├── manage_versions.svg
+    │   │       ├── menu.svg
+    │   │       ├── preview.svg
+    │   │       ├── publish.svg
+    │   │       ├── redo.svg
+    │   │       ├── undo.svg
+    │   │       └── unpublish.svg
+    │   ├── filer
+    │   │   ├── css
+    │   │   │   ├── admin_filer.cms.icons.css
+    │   │   │   ├── admin_filer.css
+    │   │   │   ├── admin_filer.fa.icons.css
+    │   │   │   ├── admin_folderpermissions.css
+    │   │   │   └── maps
+    │   │   ├── fonts
+    │   │   │   ├── django-filer-iconfont.eot
+    │   │   │   ├── django-filer-iconfont.svg
+    │   │   │   ├── django-filer-iconfont.ttf
+    │   │   │   ├── django-filer-iconfont.woff
+    │   │   │   ├── django-filer-iconfont.woff2
+    │   │   │   ├── FontAwesome.otf
+    │   │   │   ├── fontawesome-webfont.eot
+    │   │   │   ├── fontawesome-webfont.svg
+    │   │   │   ├── fontawesome-webfont.ttf
+    │   │   │   ├── fontawesome-webfont.woff
+    │   │   │   ├── fontawesome-webfont.woff2
+    │   │   │   └── src
+    │   │   ├── icons
+    │   │   │   ├── cloud-up.svg
+    │   │   │   ├── file-audio.svg
+    │   │   │   ├── file-empty.svg
+    │   │   │   ├── file-font.svg
+    │   │   │   ├── file-missing.svg
+    │   │   │   ├── file-pdf.svg
+    │   │   │   ├── file-picture.svg
+    │   │   │   ├── file-unknown.svg
+    │   │   │   ├── file-video.svg
+    │   │   │   ├── file-zip.svg
+    │   │   │   ├── folder-dropdown.svg
+    │   │   │   ├── folder-root.svg
+    │   │   │   ├── folder.svg
+    │   │   │   └── folder-unfiled.svg
+    │   │   ├── img
+    │   │   │   ├── button-bg.gif
+    │   │   │   ├── close.gif
+    │   │   │   ├── icon_changelink.gif
+    │   │   │   ├── icon_deletelink.gif
+    │   │   │   ├── loading_animation.gif
+    │   │   │   ├── nav-bg.gif
+    │   │   │   ├── select_item.gif
+    │   │   │   ├── select_item-hover.gif
+    │   │   │   └── upload_button.png
+    │   │   └── js
+    │   │       ├── addons
+    │   │       ├── base.js
+    │   │       └── libs
+    │   ├── flags
+    │   │   ├── ad.gif
+    │   │   ├── ae.gif
+    │   │   ├── af.gif
+    │   │   ├── ag.gif
+    │   │   ├── ai.gif
+    │   │   ├── al.gif
+    │   │   ├── am.gif
+    │   │   ├── ao.gif
+    │   │   ├── aq.gif
+    │   │   ├── ar.gif
+    │   │   ├── as.gif
+    │   │   ├── at.gif
+    │   │   ├── au.gif
+    │   │   ├── aw.gif
+    │   │   ├── ax.gif
+    │   │   ├── az.gif
+    │   │   ├── ba.gif
+    │   │   ├── bb.gif
+    │   │   ├── bd.gif
+    │   │   ├── be.gif
+    │   │   ├── bf.gif
+    │   │   ├── bg.gif
+    │   │   ├── bh.gif
+    │   │   ├── bi.gif
+    │   │   ├── bj.gif
+    │   │   ├── bl.gif
+    │   │   ├── bm.gif
+    │   │   ├── bn.gif
+    │   │   ├── bo.gif
+    │   │   ├── bq.gif
+    │   │   ├── br.gif
+    │   │   ├── bs.gif
+    │   │   ├── bt.gif
+    │   │   ├── bv.gif
+    │   │   ├── bw.gif
+    │   │   ├── by.gif
+    │   │   ├── bz.gif
+    │   │   ├── ca.gif
+    │   │   ├── cc.gif
+    │   │   ├── cd.gif
+    │   │   ├── cf.gif
+    │   │   ├── cg.gif
+    │   │   ├── ch.gif
+    │   │   ├── ci.gif
+    │   │   ├── ck.gif
+    │   │   ├── cl.gif
+    │   │   ├── cm.gif
+    │   │   ├── cn.gif
+    │   │   ├── co.gif
+    │   │   ├── cr.gif
+    │   │   ├── cu.gif
+    │   │   ├── cv.gif
+    │   │   ├── cw.gif
+    │   │   ├── cx.gif
+    │   │   ├── cy.gif
+    │   │   ├── cz.gif
+    │   │   ├── de.gif
+    │   │   ├── dj.gif
+    │   │   ├── dk.gif
+    │   │   ├── dm.gif
+    │   │   ├── do.gif
+    │   │   ├── dz.gif
+    │   │   ├── ec.gif
+    │   │   ├── ee.gif
+    │   │   ├── eg.gif
+    │   │   ├── eh.gif
+    │   │   ├── er.gif
+    │   │   ├── es.gif
+    │   │   ├── et.gif
+    │   │   ├── eu.gif
+    │   │   ├── fi.gif
+    │   │   ├── fj.gif
+    │   │   ├── fk.gif
+    │   │   ├── fm.gif
+    │   │   ├── fo.gif
+    │   │   ├── fr.gif
+    │   │   ├── ga.gif
+    │   │   ├── gb.gif
+    │   │   ├── gd.gif
+    │   │   ├── ge.gif
+    │   │   ├── gf.gif
+    │   │   ├── gg.gif
+    │   │   ├── gh.gif
+    │   │   ├── __.gif
+    │   │   ├── gi.gif
+    │   │   ├── gl.gif
+    │   │   ├── gm.gif
+    │   │   ├── gn.gif
+    │   │   ├── gp.gif
+    │   │   ├── gq.gif
+    │   │   ├── gr.gif
+    │   │   ├── gs.gif
+    │   │   ├── gt.gif
+    │   │   ├── gu.gif
+    │   │   ├── gw.gif
+    │   │   ├── gy.gif
+    │   │   ├── hk.gif
+    │   │   ├── hm.gif
+    │   │   ├── hn.gif
+    │   │   ├── hr.gif
+    │   │   ├── ht.gif
+    │   │   ├── hu.gif
+    │   │   ├── id.gif
+    │   │   ├── ie.gif
+    │   │   ├── il.gif
+    │   │   ├── im.gif
+    │   │   ├── in.gif
+    │   │   ├── io.gif
+    │   │   ├── iq.gif
+    │   │   ├── ir.gif
+    │   │   ├── is.gif
+    │   │   ├── it.gif
+    │   │   ├── je.gif
+    │   │   ├── jm.gif
+    │   │   ├── jo.gif
+    │   │   ├── jp.gif
+    │   │   ├── ke.gif
+    │   │   ├── kg.gif
+    │   │   ├── kh.gif
+    │   │   ├── ki.gif
+    │   │   ├── km.gif
+    │   │   ├── kn.gif
+    │   │   ├── kp.gif
+    │   │   ├── kr.gif
+    │   │   ├── kw.gif
+    │   │   ├── ky.gif
+    │   │   ├── kz.gif
+    │   │   ├── la.gif
+    │   │   ├── lb.gif
+    │   │   ├── lc.gif
+    │   │   ├── li.gif
+    │   │   ├── lk.gif
+    │   │   ├── lr.gif
+    │   │   ├── ls.gif
+    │   │   ├── lt.gif
+    │   │   ├── lu.gif
+    │   │   ├── lv.gif
+    │   │   ├── ly.gif
+    │   │   ├── ma.gif
+    │   │   ├── mc.gif
+    │   │   ├── md.gif
+    │   │   ├── me.gif
+    │   │   ├── mf.gif
+    │   │   ├── mg.gif
+    │   │   ├── mh.gif
+    │   │   ├── mk.gif
+    │   │   ├── ml.gif
+    │   │   ├── mm.gif
+    │   │   ├── mn.gif
+    │   │   ├── mo.gif
+    │   │   ├── mp.gif
+    │   │   ├── mq.gif
+    │   │   ├── mr.gif
+    │   │   ├── ms.gif
+    │   │   ├── mt.gif
+    │   │   ├── mu.gif
+    │   │   ├── mv.gif
+    │   │   ├── mw.gif
+    │   │   ├── mx.gif
+    │   │   ├── my.gif
+    │   │   ├── mz.gif
+    │   │   ├── na.gif
+    │   │   ├── nc.gif
+    │   │   ├── ne.gif
+    │   │   ├── nf.gif
+    │   │   ├── ng.gif
+    │   │   ├── ni.gif
+    │   │   ├── nl.gif
+    │   │   ├── no.gif
+    │   │   ├── np.gif
+    │   │   ├── nr.gif
+    │   │   ├── nu.gif
+    │   │   ├── nz.gif
+    │   │   ├── om.gif
+    │   │   ├── pa.gif
+    │   │   ├── pe.gif
+    │   │   ├── pf.gif
+    │   │   ├── pg.gif
+    │   │   ├── ph.gif
+    │   │   ├── pk.gif
+    │   │   ├── pl.gif
+    │   │   ├── pm.gif
+    │   │   ├── pn.gif
+    │   │   ├── pr.gif
+    │   │   ├── ps.gif
+    │   │   ├── pt.gif
+    │   │   ├── pw.gif
+    │   │   ├── py.gif
+    │   │   ├── qa.gif
+    │   │   ├── re.gif
+    │   │   ├── ro.gif
+    │   │   ├── rs.gif
+    │   │   ├── ru.gif
+    │   │   ├── rw.gif
+    │   │   ├── sa.gif
+    │   │   ├── sb.gif
+    │   │   ├── sc.gif
+    │   │   ├── sd.gif
+    │   │   ├── se.gif
+    │   │   ├── sg.gif
+    │   │   ├── sh.gif
+    │   │   ├── si.gif
+    │   │   ├── sj.gif
+    │   │   ├── sk.gif
+    │   │   ├── sl.gif
+    │   │   ├── sm.gif
+    │   │   ├── sn.gif
+    │   │   ├── so.gif
+    │   │   ├── sprite.css
+    │   │   ├── sprite-hq.css
+    │   │   ├── sprite-hq.png
+    │   │   ├── sprite.png
+    │   │   ├── sr.gif
+    │   │   ├── ss.gif
+    │   │   ├── st.gif
+    │   │   ├── sv.gif
+    │   │   ├── sx.gif
+    │   │   ├── sy.gif
+    │   │   ├── sz.gif
+    │   │   ├── tc.gif
+    │   │   ├── td.gif
+    │   │   ├── tf.gif
+    │   │   ├── tg.gif
+    │   │   ├── th.gif
+    │   │   ├── tj.gif
+    │   │   ├── tk.gif
+    │   │   ├── tl.gif
+    │   │   ├── tm.gif
+    │   │   ├── tn.gif
+    │   │   ├── to.gif
+    │   │   ├── tr.gif
+    │   │   ├── tt.gif
+    │   │   ├── tv.gif
+    │   │   ├── tw.gif
+    │   │   ├── tz.gif
+    │   │   ├── ua.gif
+    │   │   ├── ug.gif
+    │   │   ├── um.gif
+    │   │   ├── us.gif
+    │   │   ├── uy.gif
+    │   │   ├── uz.gif
+    │   │   ├── va.gif
+    │   │   ├── vc.gif
+    │   │   ├── ve.gif
+    │   │   ├── vg.gif
+    │   │   ├── vi.gif
+    │   │   ├── vn.gif
+    │   │   ├── vu.gif
+    │   │   ├── wf.gif
+    │   │   ├── ws.gif
+    │   │   ├── xk.gif
+    │   │   ├── ye.gif
+    │   │   ├── yt.gif
+    │   │   ├── za.gif
+    │   │   ├── zm.gif
+    │   │   └── zw.gif
+    │   ├── html
+    │   │   ├── politicaprivacidad.html
+    │   │   └── terminocondicion.html
+    │   ├── img
+    │   │   ├── equipo.jpg
+    │   │   ├── mision.jpg
+    │   │   ├── trading1.jpg
+    │   │   ├── trading2.jpg
+    │   │   ├── trading3.jpg
+    │   │   ├── valores.jpg
+    │   │   └── vision.jpg
+    │   ├── js
+    │   │   └── scripts.js
+    │   ├── parler
+    │   │   └── admin
+    │   │       └── parler_admin.css
+    │   ├── sortedm2m
+    │   │   └── selector-search.gif
+    │   ├── static-files-go-here
+    │   └── treebeard
+    │       ├── expand-collapse.png
+    │       ├── treebeard-admin.css
+    │       └── treebeard-admin.js
+    ├── templates
+    │   ├── account
+    │   │   ├── account_inactive.html
+    │   │   ├── base_entrance.html
+    │   │   ├── base_manage_email.html
+    │   │   ├── base_manage.html
+    │   │   ├── base_manage_password.html
+    │   │   ├── base_reauthenticate.html
+    │   │   ├── confirm_email_verification_code.html
+    │   │   ├── confirm_login_code.html
+    │   │   ├── email
+    │   │   │   ├── account_already_exists_message.txt
+    │   │   │   ├── account_already_exists_subject.txt
+    │   │   │   ├── base_message.txt
+    │   │   │   ├── base_notification.txt
+    │   │   │   ├── email_changed_message.txt
+    │   │   │   ├── email_changed_subject.txt
+    │   │   │   ├── email_confirmation_message.txt
+    │   │   │   ├── email_confirmation_signup_message.txt
+    │   │   │   ├── email_confirmation_signup_subject.txt
+    │   │   │   ├── email_confirmation_subject.txt
+    │   │   │   ├── email_confirm_message.txt
+    │   │   │   ├── email_confirm_subject.txt
+    │   │   │   ├── email_deleted_message.txt
+    │   │   │   ├── email_deleted_subject.txt
+    │   │   │   ├── login_code_message.txt
+    │   │   │   ├── login_code_subject.txt
+    │   │   │   ├── password_changed_message.txt
+    │   │   │   ├── password_changed_subject.txt
+    │   │   │   ├── password_reset_key_message.txt
+    │   │   │   ├── password_reset_key_subject.txt
+    │   │   │   ├── password_reset_message.txt
+    │   │   │   ├── password_reset_subject.txt
+    │   │   │   ├── password_set_message.txt
+    │   │   │   ├── password_set_subject.txt
+    │   │   │   ├── unknown_account_message.txt
+    │   │   │   └── unknown_account_subject.txt
+    │   │   ├── email_change.html
+    │   │   ├── email_confirm.html
+    │   │   ├── email.html
+    │   │   ├── login2.html
+    │   │   ├── login.html
+    │   │   ├── logout.html
+    │   │   ├── messages
+    │   │   │   ├── cannot_delete_primary_email.txt
+    │   │   │   ├── email_confirmation_failed.txt
+    │   │   │   ├── email_confirmation_sent.txt
+    │   │   │   ├── email_confirmed.txt
+    │   │   │   ├── email_deleted.txt
+    │   │   │   ├── logged_in.txt
+    │   │   │   ├── logged_out.txt
+    │   │   │   ├── login_code_sent.txt
+    │   │   │   ├── password_changed.txt
+    │   │   │   ├── password_set.txt
+    │   │   │   ├── primary_email_set.txt
+    │   │   │   └── unverified_primary_email.txt
+    │   │   ├── password_change.html
+    │   │   ├── password_reset_done.html
+    │   │   ├── password_reset_from_key_done.html
+    │   │   ├── password_reset_from_key.html
+    │   │   ├── password_reset.html
+    │   │   ├── password_set.html
+    │   │   ├── reauthenticate.html
+    │   │   ├── request_login_code.html
+    │   │   ├── signup_by_passkey.html
+    │   │   ├── signup_closed.html
+    │   │   ├── signup.html
+    │   │   ├── snippets
+    │   │   │   ├── already_logged_in.html
+    │   │   │   └── warn_no_email.html
+    │   │   ├── verification_sent.html
+    │   │   └── verified_email_required.html
+    │   └── custom_allauth_account
+    │       ├── account_inactive.html
+    │       ├── base_entrance.html
+    │       ├── base_manage_email.html
+    │       ├── base_manage.html
+    │       ├── base_manage_password.html
+    │       ├── base_reauthenticate.html
+    │       ├── confirm_email_verification_code.html
+    │       ├── confirm_login_code.html
+    │       ├── email
+    │       │   ├── account_already_exists_message.txt
+    │       │   ├── account_already_exists_subject.txt
+    │       │   ├── base_message.txt
+    │       │   ├── base_notification.txt
+    │       │   ├── email_changed_message.txt
+    │       │   ├── email_changed_subject.txt
+    │       │   ├── email_confirmation_message.txt
+    │       │   ├── email_confirmation_signup_message.txt
+    │       │   ├── email_confirmation_signup_subject.txt
+    │       │   ├── email_confirmation_subject.txt
+    │       │   ├── email_confirm_message.txt
+    │       │   ├── email_confirm_subject.txt
+    │       │   ├── email_deleted_message.txt
+    │       │   ├── email_deleted_subject.txt
+    │       │   ├── login_code_message.txt
+    │       │   ├── login_code_subject.txt
+    │       │   ├── password_changed_message.txt
+    │       │   ├── password_changed_subject.txt
+    │       │   ├── password_reset_key_message.txt
+    │       │   ├── password_reset_key_subject.txt
+    │       │   ├── password_reset_message.txt
+    │       │   ├── password_reset_subject.txt
+    │       │   ├── password_set_message.txt
+    │       │   ├── password_set_subject.txt
+    │       │   ├── unknown_account_message.txt
+    │       │   └── unknown_account_subject.txt
+    │       ├── email_change.html
+    │       ├── email_confirm.html
+    │       ├── email.html
+    │       ├── login.html
+    │       ├── logout.html
+    │       ├── messages
+    │       │   ├── cannot_delete_primary_email.txt
+    │       │   ├── email_confirmation_failed.txt
+    │       │   ├── email_confirmation_sent.txt
+    │       │   ├── email_confirmed.txt
+    │       │   ├── email_deleted.txt
+    │       │   ├── logged_in.txt
+    │       │   ├── logged_out.txt
+    │       │   ├── login_code_sent.txt
+    │       │   ├── password_changed.txt
+    │       │   ├── password_set.txt
+    │       │   ├── primary_email_set.txt
+    │       │   └── unverified_primary_email.txt
+    │       ├── password_change.html
+    │       ├── password_reset_done.html
+    │       ├── password_reset_from_key_done.html
+    │       ├── password_reset_from_key.html
+    │       ├── password_reset.html
+    │       ├── password_set.html
+    │       ├── reauthenticate.html
+    │       ├── request_login_code.html
+    │       ├── signup_by_passkey.html
+    │       ├── signup_closed.html
+    │       ├── signup.html
+    │       ├── snippets
+    │       │   ├── already_logged_in.html
+    │       │   └── warn_no_email.html
+    │       ├── verification_sent.html
+    │       └── verified_email_required.html
+    └── users
+        ├── admin.py
+        ├── apps.py
+        ├── __init__.py
+        ├── migrations
+        │   └── __init__.py
+        ├── models.py
+        ├── tests.py
+        └── views.py
+
+334 directories, 802 files

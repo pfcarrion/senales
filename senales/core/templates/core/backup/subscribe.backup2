@@ -1,0 +1,142 @@
+{% extends 'senales/base.html' %}
+
+{% block title %}Suscripción a Señales de Trading{% endblock %}
+
+{% load custom_filters %}
+
+{% block content %}
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Suscríbete a nuestras señales</h2>
+  <p class="text-center text-muted">
+    Rellena los campos del formulario para unirte y recibir nuestras señales exclusivas.
+  </p>
+
+  <form method="post" novalidate>
+
+{% load custom_filters %}
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Suscríbete a nuestras señales</h2>
+  <p class="text-center text-muted">
+    Rellena los campos del formulario para unirte y recibir nuestras señales exclusivas.
+  </p>
+
+  <form method="post" novalidate>
+    {% csrf_token %}
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <div class="card shadow">
+          <div class="card-body">
+            <!-- Mensajes de error generales -->
+            {% if form.non_field_errors %}
+              <div class="alert alert-danger">
+                {% for error in form.non_field_errors %}
+                  <p>{{ error }}</p>
+                {% endfor %}
+              </div>
+            {% endif %}
+
+            <!-- Tipo de suscripción -->
+            <div class="mb-3">
+              <label for="id_tipo" class="form-label">Tipo de suscripción:</label>
+              {{ form.tipo }}
+              {% if form.tipo.errors %}
+                <div class="text-danger small">
+                  {% for error in form.tipo.errors %}{{ error }}{% endfor %}
+                </div>
+              {% endif %}
+            </div>
+
+            <!-- Nombre -->
+            <div class="mb-3">
+              <label for="id_nombre" class="form-label">Nombre:</label>
+              {{ form.nombre|add_class:"form-control" }}
+              {% if form.nombre.errors %}
+                <div class="text-danger small">
+                  {% for error in form.nombre.errors %}{{ error }}{% endfor %}
+                </div>
+              {% endif %}
+            </div>
+
+            <!-- Apellido -->
+            <div class="mb-3">
+              <label for="id_apellido" class="form-label">Apellido:</label>
+              {{ form.apellido|add_class:"form-control" }}
+              {% if form.apellido.errors %}
+                <div class="text-danger small">
+                  {% for error in form.apellido.errors %}{{ error }}{% endfor %}
+                </div>
+              {% endif %}
+            </div>
+
+            <!-- País -->
+            <div class="mb-3">
+              <label for="id_pais" class="form-label">País:</label>
+              {{ form.pais|add_class:"form-select" }}
+              {% if form.pais.errors %}
+                <div class="text-danger small">
+                  {% for error in form.pais.errors %}{{ error }}{% endfor %}
+                </div>
+              {% endif %}
+            </div>
+
+            <!-- Correo -->
+            <div class="mb-3">
+              <label for="id_correo" class="form-label">Correo electrónico:</label>
+              {{ form.correo|add_class:"form-control" }}
+              {% if form.correo.errors %}
+                <div class="text-danger small">
+                  {% for error in form.correo.errors %}{{ error }}{% endfor %}
+                </div>
+              {% endif %}
+            </div>
+
+            <!-- Plan de suscripción -->
+            <div class="mb-3">
+              <label for="id_monto" class="form-label">Plan de Suscripción:</label>
+              {{ form.monto|add_class:"form-select" }}
+              <select id="plan" name="plan" class="form-select mt-2" required>
+                <option value="" disabled selected>Selecciona un plan...</option>
+                <option value="mensual">Mensual</option>
+                <option value="trimestral">Trimestral</option>
+                <option value="semestral">Semestral</option>
+                <option value="anual">Anual</option>
+              </select>
+              {% if form.monto.errors %}
+                <div class="text-danger small">
+                  {% for error in form.monto.errors %}{{ error }}{% endfor %}
+                </div>
+              {% endif %}
+            </div>
+
+            <!-- Es recursiva -->
+            <div class="mb-3">
+              <label for="id_es_recursiva" class="form-label">¿Es recursiva?</label>
+              {{ form.es_recursiva|add_class:"form-check-input" }}
+              {% if form.es_recursiva.errors %}
+                <div class="text-danger small">
+                  {% for error in form.es_recursiva.errors %}{{ error }}{% endfor %}
+                </div>
+              {% endif %}
+            </div>
+
+            <!-- Botón de envío -->
+            <button type="submit" class="btn btn-primary w-100">Suscribirse</button>
+          </div>
+        </div>
+
+        <!-- Mensajes de éxito o error -->
+        {% if messages %}
+          <div class="mt-4">
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}

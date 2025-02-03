@@ -1,0 +1,158 @@
+[
+    {
+        "divisa": "EURUSD-OTC",
+        "tiempo": "M1",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "Eurjpy-OTC",
+        "tiempo": "M1",
+        "direccion": "CALL",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "EURGBP-OTC",
+        "tiempo": "3",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "USDCHF",
+        "tiempo": "3",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "Activo",
+        "tiempo": "M5",
+        "direccion": "CALL",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "EUR/USD",
+        "tiempo": "3 M5",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "EUR/CAD",
+        "tiempo": "1min",
+        "direccion": "UP",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "EURAUD",
+        "tiempo": "m15",
+        "direccion": "CALL",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "EURAUD",
+        "tiempo": "m15",
+        "direccion": "CALL",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "NZDUSD",
+        "tiempo": "m15",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "NZDUSD",
+        "tiempo": "m15",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "AUDCAD",
+        "tiempo": "m15",
+        "direccion": "CALL",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "BHD/CNY OTC",
+        "tiempo": "2 min",
+        "direccion": "CALL",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "AUD/USD",
+        "tiempo": "2 min",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "USD/BRL",
+        "tiempo": "2 Min",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "MAD/USD OTC",
+        "tiempo": "1 MINUTES",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "GBPJPY-OTC",
+        "tiempo": "M1",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "USDINR-OTC",
+        "tiempo": "M1",
+        "direccion": "CALL",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "USDINR-OTC",
+        "tiempo": "M1",
+        "direccion": "CALL",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "EURJPY-OTC",
+        "tiempo": "M1",
+        "direccion": "PUT",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "NZD/JPY",
+        "tiempo": "1 MINUTES",
+        "direccion": "UP",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "USD/BRL",
+        "tiempo": "2 MINUTES",
+        "direccion": "DOWN",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "USD/EGP OTC",
+        "tiempo": "1 min",
+        "direccion": "DOWN",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "USD/EGP OTC",
+        "tiempo": "1 min",
+        "direccion": "UP",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "USD/EGP OTC",
+        "tiempo": "1 min",
+        "direccion": "SELL",
+        "timestamp": "2025-02-02 17:02:57"
+    },
+    {
+        "divisa": "USD/EGP OTC",
+        "tiempo": "1 min",
+        "direccion": "BUY",
+        "timestamp": "2025-02-02 17:02:57"
+    }
+]

@@ -1,0 +1,8 @@
+.modal-backdrop {
+  z-index: 1040;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+}
+
+.modal {
+  z-index: 1050;
+}
