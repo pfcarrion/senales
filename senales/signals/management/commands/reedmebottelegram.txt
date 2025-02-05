@@ -1,6 +1,6 @@
 Análisis del Código bottelegram.py
 
-El código que proporcionaste es un script que actúa como un bot de Telegram para capturar señales de trading. Aquí hay un desglose paso a paso de lo que hace el código:
+El código que se proporciona es un script que actúa como un bot de Telegram para capturar señales de trading. Aquí hay un desglose paso a paso de lo que hace el código:
 
 1. Configuración Inicial y Librerías
 
